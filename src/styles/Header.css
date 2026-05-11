@@ -1,0 +1,70 @@
+header {
+  padding-top: 20px;
+  height: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  /* angle: 0 deg; */
+  opacity: 1;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.logo {
+  font-family: K2D;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: justify;
+  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pages {
+  width: 653px;
+  height: 24px;
+  gap: 60px;
+  opacity: 1;
+  display: flex;
+  width: 70%;
+}
+
+.one-page {
+  font-family: Lato;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: justify;
+  color: rgba(149, 149, 149, 1);
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.btn-hire-me {
+  width: 141px;
+  height: 43px;
+  gap: 10px;
+  opacity: 1;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  background: linear-gradient(94.36deg, #fd6f00 3.1%, #e46400 94.54%);
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: justify;
+  color: rgba(255, 255, 255, 1);
+}
+.btn-hire-me:hover{
+    background:  #f68127  ;
+}
+

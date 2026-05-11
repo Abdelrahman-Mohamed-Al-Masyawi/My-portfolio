@@ -1,0 +1,1025 @@
+.container-home {
+  padding:  50px 80px;
+  display: flex;
+  justify-content: space-between;
+  /* angle: 0 deg; */
+  opacity: 1;
+}
+.container-information {
+  width: 50%;
+  height: 568px;
+  gap: 80px;
+  /* angle: 0 deg; */
+  opacity: 1;
+}
+
+.information {
+  width: 518px;
+  height: 363px;
+  gap: 61px;
+  /* angle: 0 deg; */
+  opacity: 1;
+}
+.person-ifo {
+  width: 518px;
+  height: 254px;
+  gap: 17px;
+  /* angle: 0 deg; */
+  opacity: 1;
+}
+.info {
+  width: 518px;
+  height: 181px;
+  gap: 24px;
+  /* angle: 0 deg; */
+  opacity: 1;
+}
+.container-name {
+  width: 100%;
+  height: 73px;
+  gap: 10px;
+  /* angle: 0 deg; */
+  opacity: 1;
+}
+.hi {
+  width: 80px;
+  height: 29px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  font-family: Lato;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: rgba(112, 112, 112, 1);
+}
+.name {
+  width: 100%;
+  height: 34px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: rgba(149, 149, 149, 1);
+}
+.jop {
+  width: 100%;
+  /* angle: 0 deg; */
+  opacity: 1;
+  margin-top: 20px;
+  font-family: Lato;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 58px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 3%;
+  background: linear-gradient(90.48deg, #984300 0.34%, #fd6f00 42.06%, #ca5900 90.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-contacts-icon {
+  width: 220px;
+  height: 56;
+  gap: 20px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  padding-top: 16px;
+  display: flex;
+}
+.rounded-icons-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*angle: 0 deg;
+  */
+  opacity: 1;
+  border-width: 0.7px;
+  border: 0.7px solid rgba(87, 87, 87, 1);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+.rounded-icons-container:hover {
+  background-color: #f68127;
+}
+.contacts-icon {
+  width: 20.000017166137695px;
+  height: 20.000015258789062px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  border-width: 2px;
+  top: 2px;
+  left: 2px;
+  border: none;
+
+  /* border: 2px solid #bababa; */
+}
+
+/** احصاءات */
+.statistics {
+  width: 100%;
+  height: 125px;
+  gap: 30px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  border-radius: 8px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  justify-content: space-between;
+}
+.container-one-statistic {
+  width: 25%;
+  opacity: 1;
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  border-right-width: 1px;
+}
+.number {
+  /* width: 29px; */
+  height: 29px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  font-family: Lato;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 24px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: justify;
+  color: rgba(253, 111, 0, 1);
+}
+.name-statistic {
+  width: 90%;
+  height: 24px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 15px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: justify;
+  color: rgba(223, 223, 223, 1);
+}
+.not-border {
+  border: none;
+}
+.btn-HireMe {
+  width: 156px;
+  height: 48px;
+  gap: 10px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  border-radius: 8px;
+  background: linear-gradient(94.36deg, #fd6f00 3.1%, #e46400 94.54%);
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: justify;
+  color: rgba(255, 255, 255, 1);
+}
+.btn-HireMe:hover {
+  background: #f68127;
+}
+.container-btns {
+  width: 389;
+  height: 48;
+  gap: 24px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  display: flex;
+}
+.btn-cv {
+  width: 209px;
+  height: 48px;
+  gap: 10px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  border-radius: 8px;
+  border-width: 2px;
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: justify;
+  color: rgba(149, 149, 149, 1);
+  border: 2px solid rgba(149, 149, 149, 1);
+}
+
+.btn-cv:hover {
+  background: #ffffff;
+  color: black;
+}
+/**الصوره*/
+.container-myImg {
+  width: 50%;
+  height: 781px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.circle {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto !important ;
+  /*angle: 0 deg;
+ */
+  opacity: 1;
+  top: 163px;
+  left: 662px;
+  /* border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #ffffff0a; */
+}
+.my-img {
+  width: 350px;
+  height: 581px;
+  /*angle: 0 deg;
+  */
+  opacity: 1;
+  left: 711px;
+  border-radius: 244px;
+  -webkit-border-radius: 244px;
+  -moz-border-radius: 244px;
+  -ms-border-radius: 244px;
+  -o-border-radius: 244px;
+  /* object-fit: fill; */
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+/* *========================================= */
+/* *========================================= */
+/* *========================================= */
+
+@media (max-width: 320px) {
+  .container-home {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    /* overflow-y: hidden; */
+  }
+  .container-information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .person-ifo {
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+  .info {
+    width: 100%;
+    height: au;
+    gap: 24px;
+    height: auto;
+  }
+  .container-name {
+    width: 100%;
+    height: 73px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hi {
+    width: 80px;
+    height: 29px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    display: block;
+  }
+  .name {
+    width: 100%;
+    height: 34px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .jop {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container-contacts-icon {
+    width: 100%;
+    gap: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .rounded-icons-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0.7px;
+  }
+
+  .contacts-icon {
+    width: 20.000017166137695px;
+    height: 20.000015258789062px;
+    border-width: 2px;
+    top: 2px;
+    left: 2px;
+  }
+
+  /** احصاءات */
+  .statistics {
+    width: 90%;
+    height: 90px;
+    gap: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .container-one-statistic {
+    width: clamp(50px, 22%, 70px);
+    padding-top: 6px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-right-width: 1px;
+    text-align: center;
+  }
+  .number {
+    height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: justify;
+  }
+  .name-statistic {
+    width: 100%;
+    font-weight: 400;
+    font-size: clamp(5px, 7px, 10px);
+    text-align: start;
+    padding-left: 0;
+  }
+
+  .btn-HireMe {
+    width: clamp(70px, 40%, 100px);
+    font-size: clamp(12px, 14px, 16px);
+    height: 33px;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+  }
+  .container-btns {
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 30px 0;
+  }
+  .btn-cv {
+    width: 130px;
+    font-size: 15px;
+    width: clamp(80px, 45%, 130px);
+    font-size: clamp(12px, 14px, 16px);
+    height: 33px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+  }
+
+  /**الصوره*/
+  .container-myImg {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .circle {
+    width: 180px;
+    height: 150px;
+    /* top: 163px;
+    left: 662px; */
+  }
+  .my-img {
+    width: 170px;
+    height: 310px;
+    left: 711px;
+    border-radius: 244px;
+    -webkit-border-radius: 244px;
+    -moz-border-radius: 244px;
+    -ms-border-radius: 244px;
+    -o-border-radius: 244px;
+    /* object-fit: fill; */
+    margin-top: 120px;
+  }
+}
+
+/* *========================================= */
+/* *========================================= */
+/* *========================================= */
+
+@media (min-width: 321px) and (max-width: 420px) {
+  .container-home {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    /* overflow-y: hidden; */
+  }
+  .container-information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .person-ifo {
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+  .info {
+    width: 100%;
+    height: au;
+    gap: 24px;
+    height: auto;
+  }
+  .container-name {
+    width: 100%;
+    height: 73px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hi {
+    width: auto;
+    height: 29px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: clamp(20px, 25px, 30px);
+    line-height: 100%;
+    letter-spacing: 3%;
+    display: block;
+  }
+  .name {
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+    font-size: clamp(22px, 25px, 30px);
+  }
+  .jop {
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: clamp(28px, 30px, 35px);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container-contacts-icon {
+    width: 100%;
+    gap: 17px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .rounded-icons-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0.7px;
+  }
+
+  .contacts-icon {
+    width: 20.000017166137695px;
+    height: 20.000015258789062px;
+    border-width: 2px;
+    top: 2px;
+    left: 2px;
+  }
+
+  /** احصاءات */
+  .statistics {
+    width: 95%;
+    height: 90px;
+    gap: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .container-one-statistic {
+    width: clamp(50px, 22%, 70px);
+    padding-top: 6px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-right-width: 1px;
+    text-align: center;
+  }
+  .number {
+    height: 20px;
+    font-weight: 600;
+    font-size: 27px;
+    text-align: justify;
+  }
+  .name-statistic {
+    width: 100%;
+    font-weight: 400;
+    font-size: clamp(10px, 12px, 17px);
+    text-align: start;
+    padding-left: 0;
+  }
+
+  .btn-HireMe {
+    width: clamp(90px, 40%, 120px);
+    font-size: clamp(14px, 17px, 19px);
+    height: 37px;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+  }
+  .container-btns {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 30px 0;
+  }
+  .btn-cv {
+    width: 130px;
+    font-size: 15px;
+    width: clamp(100px, 48%, 150px);
+    font-size: clamp(15px, 17px, 20px);
+    height: 37px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+  }
+
+  /**الصوره*/
+  .container-myImg {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .circle {
+    width: 200px;
+    height: 170px;
+    /* top: 163px;
+    left: 662px; */
+  }
+  .my-img {
+    width: 200px;
+    height: 170px;
+    left: 711px;
+    border-radius: 244px;
+    -webkit-border-radius: 244px;
+    -moz-border-radius: 244px;
+    -ms-border-radius: 244px;
+    -o-border-radius: 244px;
+    /* object-fit: fill; */
+    margin-top: 120px;
+  }
+}
+
+/* *========================================= */
+/* *========================================= */
+/* *========================================= */
+
+@media (min-width: 421px) and (max-width: 500px) {
+  .container-home {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    /* overflow-y: hidden; */
+  }
+  .container-information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .person-ifo {
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+  .info {
+    width: 100%;
+    height: au;
+    gap: 24px;
+    height: auto;
+  }
+  .container-name {
+    width: 100%;
+    height: 73px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hi {
+    width: auto;
+    height: 29px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: clamp(25px, 30px, 35px);
+    line-height: 100%;
+    letter-spacing: 3%;
+    display: block;
+  }
+  .name {
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+    font-size: clamp(25px, 30px, 35px);
+  }
+  .jop {
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: clamp(31px, 35px, 40px);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container-contacts-icon {
+    width: 100%;
+    gap: 17px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .rounded-icons-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0.7px;
+  }
+
+  .contacts-icon {
+    width: 20.000017166137695px;
+    height: 20.000015258789062px;
+    border-width: 2px;
+    top: 2px;
+    left: 2px;
+  }
+
+  /** احصاءات */
+  .statistics {
+    width: 80%;
+    height: 90px;
+    gap: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .container-one-statistic {
+    width: clamp(50px, 22%, 70px);
+    padding-top: 6px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-right-width: 1px;
+    text-align: center;
+  }
+  .number {
+    height: 20px;
+    font-weight: 600;
+    font-size: 27px;
+    text-align: justify;
+  }
+  .name-statistic {
+    width: 100%;
+    font-weight: 400;
+    font-size: clamp(10px, 12px, 17px);
+    text-align: start;
+    padding-left: 0;
+  }
+
+  .btn-HireMe {
+    width: clamp(90px, 40%, 120px);
+    font-size: clamp(14px, 17px, 19px);
+    height: 37px;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+  }
+  .container-btns {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 30px 0;
+  }
+  .btn-cv {
+    width: 130px;
+    font-size: 15px;
+    width: clamp(100px, 48%, 150px);
+    font-size: clamp(15px, 17px, 20px);
+    height: 37px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+  }
+
+  /**الصوره*/
+  .container-myImg {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .circle {
+    width: 230px;
+    height: 2000px;
+    /* top: 163px;
+    left: 662px; */
+  }
+  .my-img {
+    width: 230px;
+    height: 220px;
+    left: 711px;
+    border-radius: 244px;
+    -webkit-border-radius: 244px;
+    -moz-border-radius: 244px;
+    -ms-border-radius: 244px;
+    -o-border-radius: 244px;
+    /* object-fit: fill; */
+    margin-top: 120px;
+  }
+}
+
+/* *========================================= */
+/* *========================================= */
+/* *========================================= */
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .container-home {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    /* overflow-y: hidden; */
+  }
+  .container-information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .person-ifo {
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+  .info {
+    width: 100%;
+    height: au;
+    gap: 24px;
+    height: auto;
+  }
+  .container-name {
+    width: 100%;
+    height: 73px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  .jop {
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: clamp(40px, 60px, 50px);
+
+    text-align: center;
+  }
+
+  .container-contacts-icon {
+    width: 100%;
+    gap: 17px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  /** احصاءات */
+  .statistics {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .container-one-statistic {
+    width: clamp(50px, 22%, 70px);
+    padding-top: 6px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-right-width: 1px;
+    text-align: center;
+  }
+  .number {
+    height: 20px;
+    font-weight: 600;
+    font-size: 27px;
+    text-align: justify;
+  }
+  .name-statistic {
+    width: 100%;
+    font-weight: 400;
+    font-size: clamp(10px, 12px, 17px);
+    text-align: start;
+    padding-left: 0;
+  }
+
+  .container-btns {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 30px 0;
+  }
+
+  /**الصوره*/
+  .container-myImg {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .circle {
+    width: 260px;
+    height: 250px;
+    /* top: 163px;
+    left: 662px; */
+  }
+  .my-img {
+    width: 260px;
+    height: 250px;
+    left: 711px;
+    border-radius: 244px;
+    -webkit-border-radius: 244px;
+    -moz-border-radius: 244px;
+    -ms-border-radius: 244px;
+    -o-border-radius: 244px;
+    /* object-fit: fill; */
+    margin-top: 120px;
+  }
+}
