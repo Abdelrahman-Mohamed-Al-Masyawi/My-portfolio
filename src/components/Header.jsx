@@ -10,7 +10,6 @@ export default function Header() {
   if (isTabletWithPhone) {
     return (
       <header>
-        {/* <button className='btn-hire-me'>Hire Me</button> */}
         <div className='logo'>LOGO</div>
         <RxHamburgerMenu className='iconMenu' onClick={openSidebar} />
       </header>
@@ -20,13 +19,13 @@ export default function Header() {
   return (
     <header>
       <div className='logo'>LOGO</div>
-
       <Navigation />
-      {/* <RxHamburgerMenu className='iconMenu' onClick={openSidebar} /> */}
       <button className='btn-hire-me'>Hire Me</button>
     </header>
   );
 }
+
+
 
 function Navigation() {
   const [PageActive, setPageActive] = useState('Home');

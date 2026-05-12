@@ -1,5 +1,11 @@
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
+
 .container-home {
-  padding:  50px 80px;
+  padding: 50px 80px;
   display: flex;
   justify-content: space-between;
   /* angle: 0 deg; */
@@ -296,7 +302,7 @@
 
 @media (max-width: 320px) {
   .container-home {
-    margin: 20px 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -393,6 +399,7 @@
   .statistics {
     width: 90%;
     height: 90px;
+    margin: 10px auto;
     gap: 30px;
     padding: 10px;
     display: flex;
@@ -495,7 +502,7 @@
 
 @media (min-width: 321px) and (max-width: 420px) {
   .container-home {
-    margin: 20px 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -591,6 +598,7 @@
   /** احصاءات */
   .statistics {
     width: 95%;
+    margin: 5px auto;
     height: 90px;
     gap: 30px;
     padding: 10px;
@@ -695,7 +703,7 @@
 
 @media (min-width: 421px) and (max-width: 500px) {
   .container-home {
-    margin: 20px 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -791,6 +799,7 @@
   /** احصاءات */
   .statistics {
     width: 80%;
+    margin: 5px auto;
     height: 90px;
     gap: 30px;
     padding: 10px;
@@ -893,9 +902,10 @@
 /* *========================================= */
 /* *========================================= */
 
-@media (min-width: 501px) and (max-width: 700px) {
+@media (min-width: 501px) and (max-width: 750px) {
   .container-home {
     margin: 20px 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -937,7 +947,6 @@
     text-align: center;
   }
 
-  
   .jop {
     width: 100%;
     margin-top: 15px;
@@ -1012,6 +1021,240 @@
   }
   .my-img {
     width: 260px;
+    height: 250px;
+    left: 711px;
+    border-radius: 244px;
+    -webkit-border-radius: 244px;
+    -moz-border-radius: 244px;
+    -ms-border-radius: 244px;
+    -o-border-radius: 244px;
+    /* object-fit: fill; */
+    margin-top: 120px;
+  }
+}
+
+/* *========================================= */
+/* *========================================= */
+/* *========================================= */
+
+@media (min-width: 751px) and (max-width: 900px) {
+  .container-home {
+    margin: 20px 10px;
+    padding: 20px 10px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    /* overflow-y: hidden; */
+  }
+  .container-information {
+    width: 60%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .person-ifo {
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+  .info {
+    width: 100%;
+    height: au;
+    gap: 24px;
+    height: auto;
+  }
+  .container-name {
+    width: 100%;
+    height: 73px;
+    gap: 10px;
+  }
+  .hi {
+    text-align: start !important;
+  }
+  .name {
+    text-align: start;
+  }
+  .jop {
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: clamp(40px, 45px, 50px);
+  }
+
+  .container-contacts-icon {
+    width: 100%;
+    gap: 17px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  /** احصاءات */
+  .statistics {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .container-one-statistic {
+    width: clamp(50px, 22%, 70px);
+    padding-top: 6px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-right-width: 1px;
+    text-align: center;
+  }
+  .number {
+    height: 20px;
+    font-weight: 600;
+    font-size: 27px;
+    text-align: justify;
+  }
+  .name-statistic {
+    width: 100%;
+    font-weight: 400;
+    font-size: clamp(10px, 12px, 17px);
+    text-align: start;
+    padding-left: 0;
+  }
+
+  .container-btns {
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin: 30px 0;
+  }
+
+  /**الصوره*/
+  .container-myImg {
+    width: 40%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .circle {
+    width: 300px;
+    height: 250px;
+    /* top: 163px;
+    left: 662px; */
+  }
+  .my-img {
+    width: 300px;
+    height: 250px;
+    left: 711px;
+    border-radius: 244px;
+    -webkit-border-radius: 244px;
+    -moz-border-radius: 244px;
+    -ms-border-radius: 244px;
+    -o-border-radius: 244px;
+    /* object-fit: fill; */
+    margin-top: 120px;
+  }
+}
+
+/* *========================================= */
+/* *========================================= */
+/* *========================================= */
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .container-home {
+    margin: 20px 10px;
+    padding: 20px 10px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    /* overflow-y: hidden; */
+  }
+  .container-information {
+    width: 60%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .information {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .person-ifo {
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+  .info {
+    width: 100%;
+    height: au;
+    gap: 24px;
+    height: auto;
+  }
+  .container-name {
+    width: 100%;
+    height: 73px;
+    gap: 10px;
+  }
+  .hi {
+    text-align: start !important;
+  }
+  .name {
+    text-align: start;
+  }
+  .jop {
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: clamp(40px, 45px, 50px);
+  }
+
+  .container-contacts-icon {
+    width: 100%;
+    gap: 17px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+
+  .container-btns {
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin: 30px 0;
+  }
+
+  /**الصوره*/
+  .container-myImg {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .circle {
+    width: 350px;
+    height: 280px;
+    /* top: 163px;
+    left: 662px; */
+  }
+  .my-img {
+    width: 300px;
     height: 250px;
     left: 711px;
     border-radius: 244px;

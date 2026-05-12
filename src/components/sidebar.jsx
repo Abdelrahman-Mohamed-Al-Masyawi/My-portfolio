@@ -26,7 +26,7 @@ export default function Sidebar() {
   const { ActivePage, Style } = actions;
   return (
     <aside className='aside'>
-      <div className='container-name'>
+      <div className='container-name-sidebar'>
         <img src='/imgs/mylogo1.png' alt='' className='myImg' />
         <span>Abdelrahman </span>
         <FaTimes onClick={closeSidebar} className='closeIcon' />
