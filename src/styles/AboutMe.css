@@ -1,0 +1,55 @@
+.container-page-aboutMe {
+  text-align: center;
+  width: 100%;
+  padding: 20px 70px;
+}
+.title-page-aboutMe {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  color: rgba(254, 254, 254, 1);
+}
+
+.content-page-aboutMe {
+  font-family: Lato;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 190%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: rgba(149, 149, 149, 1);
+}
+
+@media (max-width: 400px) {
+  .container-page-aboutMe {
+    padding: 20px 15px;
+  }
+  .title-page-aboutMe {
+    font-size: 24px;
+  }
+  .content-page-aboutMe {
+    font-size: 15px;
+  }
+}
+@media (min-width: 401px) and (max-width: 700px) {
+  .container-page-aboutMe {
+    padding: 20px 20px;
+  }
+  .title-page-aboutMe {
+    font-size: 30px;
+  }
+  .content-page-aboutMe {
+    font-size: 17px;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .container-page-aboutMe {
+    padding: 20px 25px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+}

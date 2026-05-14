@@ -70,8 +70,8 @@ header {
 @media (max-width: 1100px) {
   header {
     width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
   }
   .pages {
     width: clamp(500px, 60%, 653px);

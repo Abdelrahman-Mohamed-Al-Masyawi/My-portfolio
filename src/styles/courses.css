@@ -47,7 +47,6 @@
 .card {
   width: 400px;
   height: 322px !important;
-
   border-radius: 24px;
   padding: 34px;
   background: rgba(255, 255, 255, 0.04) !important;
@@ -55,19 +54,28 @@
   flex-direction: column;
   align-items: center;
 }
+
+.card:hover {
+  background: rgba(239, 225, 225, 0.2) !important;
+}
+.card:hover:hover .details-card {
+  color: white;
+}
+
 .icon-card {
   width: 70px;
   height: 70px;
   top: 5.83px;
   left: 5.83px;
   color: rgba(253, 111, 0, 1);
+  /* color: white; */
 }
 .title-card {
   font-family: Lato;
   font-weight: 700;
   font-style: Bold;
   font-size: 24px;
-  text-align: justify;
+  text-align: center;
   color: rgba(253, 111, 0, 1);
 }
 .details-card {
@@ -80,8 +88,9 @@
 }
 
 @media (max-width: 400px) {
-  .container-title-page {
-    width: 80%;
+ .details-title-page-courses {
+    padding-left: 10px;
+    padding-right:10px;
   }
   .container-courses {
     gap: 20px;
@@ -98,12 +107,18 @@
     padding: 34px;
     background: rgba(255, 255, 255, 0.04) !important;
   }
+  .title-card {
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(253, 111, 0, 1);
+  }
 }
 
 @media (min-width: 401px) and (max-width: 700px) {
-  .container-title-page {
-    width: 80%;
-  }
+  
   .container-courses {
     gap: 5px;
     padding-right: 5px !important;
@@ -119,6 +134,10 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+  }
+  .details-title-page-courses {
+    padding-left: 20px;
+    padding-right:20px;
   }
 }
 @media (min-width: 401px) and (max-width: 650px) {
@@ -142,11 +161,13 @@
     -ms-border-radius: 24px;
     -o-border-radius: 24px;
   }
+  .details-title-page-courses {
+    padding-left: 20px;
+    padding-right:20px;
+  }
 }
 @media (min-width: 701px) and (max-width: 900px) {
-  .container-title-page {
-    width: 80%;
-  }
+  
   .container-courses {
     gap: 25px 10px;
     padding-right: 5px !important;
@@ -170,6 +191,10 @@
     padding: 34px;
     background: rgba(255, 255, 255, 0.04) !important;
   }
+  .details-title-page-courses {
+    padding-left: 20px;
+    padding-right:20px;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -187,6 +212,10 @@
     border-radius: 24px;
     padding: 34px;
     background: rgba(255, 255, 255, 0.04) !important;
+  }
+  .details-title-page-courses {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 

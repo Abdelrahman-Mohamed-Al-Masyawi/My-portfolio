@@ -15,7 +15,6 @@ import { PiCertificateBold } from 'react-icons/pi';
 import { GiTeacher } from 'react-icons/gi';
 import { IoLogoJavascript } from 'react-icons/io5';
 
-
 const styleIcon = { width: '55px', height: '55px' };
 const college = {
   id: 0,
@@ -56,19 +55,9 @@ export const coursesData = [
     img: '',
     academy: 'self learning and with Financial Accountant',
   },
+
   {
     id: 4,
-    title: 'Effective teaching strategies',
-    details:
-      'Creating online tests using Google Drive or Kahoot and creating digital learning videos such as PowerPoint presentations',
-    year: '2024 ',
-    icon: <GiTeacher style={styleIcon} />,
-    img: '',
-    academy: 'Maaref platform',
-  },
-  
-  {
-    id: 5,
     title: 'React',
     details: 'Built modern interactive web applications using components, hooks, routing, and state management',
     year: '2025',
@@ -77,7 +66,7 @@ export const coursesData = [
     academy: 'Jonas Schmedtmann',
   },
   {
-    id: 6,
+    id: 5,
     title: 'Node.js',
     details: 'Learned backend development, REST APIs, Express.js, authentication, and working with databases',
     year: '2025',
@@ -85,8 +74,6 @@ export const coursesData = [
     img: '',
     academy: 'Jonas Schmedtmann',
   },
-  
-  
 ];
 
 const skills = [
@@ -134,5 +121,15 @@ const skills = [
     icon: <FaGithub style={styleIcon} />,
     img: '',
     academy: 'Osama Elzero',
+  },
+  {
+    id: 4,
+    title: 'Effective teaching strategies',
+    details:
+      'Creating online tests using Google Drive or Kahoot and creating digital learning videos such as PowerPoint presentations',
+    year: '2024 ',
+    icon: <GiTeacher style={styleIcon} />,
+    img: '',
+    academy: 'Maaref platform',
   },
 ];
