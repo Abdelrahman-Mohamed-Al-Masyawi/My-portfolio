@@ -1,0 +1,226 @@
+.container-courses {
+  gap: 40px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title-page-Courses {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  width: 100%;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  color: rgba(254, 254, 254, 1);
+}
+
+.details-title-page-courses {
+  font-family: Lato;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 3%;
+  text-align: justify;
+  color: rgba(112, 112, 112, 1);
+}
+.container-courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 400px;
+  height: 322px !important;
+  gap: 34px;
+  border-radius: 24px;
+  padding: 34px;
+  background: rgba(255, 255, 255, 0.04) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-card {
+  width: 70px;
+  height: 70px;
+  top: 5.83px;
+  left: 5.83px;
+  color: rgba(253, 111, 0, 1);
+}
+.title-card {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  text-align: justify;
+  color: rgba(253, 111, 0, 1);
+}
+.details-card {
+  font-family: Lato;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(87, 87, 87, 1);
+}
+
+@media (max-width: 400px) {
+  .container-title-page {
+    width: 80%;
+  }
+  .container-courses {
+    gap: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 95%;
+    height: auto;
+    border-radius: 24px;
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 700px) {
+  .container-title-page {
+    width: 80%;
+  }
+  .container-courses {
+    gap: 5px;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-courses {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 401px) and (max-width: 650px) {
+  .card {
+    width: 400px !important;
+    height: 322px !important;
+    border-radius: 24px;
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+}
+@media (min-width: 651px) and (max-width: 700px) {
+  .card {
+    width: clamp(300px, 45%, 400px) !important;
+    height: 322px !important;
+    border-radius: 24px;
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.04) !important;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .container-title-page {
+    width: 80%;
+  }
+  .container-courses {
+    gap: 25px 10px;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-courses {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 300px !important;
+    height: 322px !important;
+    border-radius: 24px;
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .container-courses {
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 400px;
+    height: 322px !important;
+    border-radius: 24px;
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .container-courses {
+    gap: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 30%;
+  }
+  .container-courses {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1401px) and (max-width: 1700px) {
+  .container-courses {
+    gap: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 400px;
+  }
+  .container-courses {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
