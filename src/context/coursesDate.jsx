@@ -66,35 +66,9 @@ export const coursesData = [
     img: '',
     academy: 'Maaref platform',
   },
+  
   {
     id: 5,
-    title: 'HTML',
-    details: 'Learned how to build and structure web pages using semantic HTML elements and best practices',
-    year: '2024',
-    icon: <FaHtml5 style={styleIcon} />,
-    img: '',
-    academy: 'Osama Elzero',
-  },
-  {
-    id: 6,
-    title: 'CSS',
-    details: 'Learned responsive design, Flexbox, Grid, animations, and modern UI styling techniques',
-    year: '2024',
-    icon: <FaCss3Alt style={styleIcon} />,
-    img: '',
-    academy: 'Osama Elzero',
-  },
-  {
-    id: 7,
-    title: 'JavaScript',
-    details: 'Learned DOM manipulation, ES6, asynchronous JavaScript, APIs, and problem solving',
-    year: '2025',
-    icon: <IoLogoJavascript style={styleIcon} />,
-    img: '',
-    academy: 'Tarmiz Academy',
-  },
-  {
-    id: 8,
     title: 'React',
     details: 'Built modern interactive web applications using components, hooks, routing, and state management',
     year: '2025',
@@ -103,7 +77,7 @@ export const coursesData = [
     academy: 'Jonas Schmedtmann',
   },
   {
-    id: 9,
+    id: 6,
     title: 'Node.js',
     details: 'Learned backend development, REST APIs, Express.js, authentication, and working with databases',
     year: '2025',
@@ -111,17 +85,40 @@ export const coursesData = [
     img: '',
     academy: 'Jonas Schmedtmann',
   },
+  
+  
+];
+
+const skills = [
   {
-    id: 10,
-    title: 'Git & GitHub',
-    details: 'Learned version control, branching, collaboration, and managing projects using Git and GitHub',
-    year: '2025',
-    icon: <FaGithub style={styleIcon} />,
+    id: 1,
+    title: 'HTML',
+    details: 'Learned how to build and structure web pages using semantic HTML elements and best practices',
+    year: '2024',
+    icon: <FaHtml5 style={styleIcon} />,
     img: '',
     academy: 'Osama Elzero',
   },
   {
-    id: 11,
+    id: 2,
+    title: 'CSS',
+    details: 'Learned responsive design, Flexbox, Grid, animations, and modern UI styling techniques',
+    year: '2024',
+    icon: <FaCss3Alt style={styleIcon} />,
+    img: '',
+    academy: 'Osama Elzero',
+  },
+  {
+    id: 3,
+    title: 'JavaScript',
+    details: 'Learned DOM manipulation, ES6, asynchronous JavaScript, APIs, and problem solving',
+    year: '2025',
+    icon: <IoLogoJavascript style={styleIcon} />,
+    img: '',
+    academy: 'Tarmiz Academy',
+  },
+  {
+    id: 4,
     title: 'Bootstrap',
     details: 'Learned responsive layouts, Bootstrap components, grid system, and building modern user interfaces',
     year: '2024',
@@ -129,6 +126,13 @@ export const coursesData = [
     img: '',
     academy: 'Abdelrahman Gamal',
   },
-  // { id: 9, title: '', details: '', year: '', icon: '', img: '', academy: '' },
-  // { id: 10, title: '', details: '', year: '', icon: '', img: '', academy: '' },
+  {
+    id: 5,
+    title: 'Git & GitHub',
+    details: 'Learned version control, branching, collaboration, and managing projects using Git and GitHub',
+    year: '2025',
+    icon: <FaGithub style={styleIcon} />,
+    img: '',
+    academy: 'Osama Elzero',
+  },
 ];
