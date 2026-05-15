@@ -1,0 +1,52 @@
+// import {
+//   SiHtml5,
+//   SiCss3,
+//   SiJavascript,
+//   SiBootstrap,
+//   SiTailwindcss,
+//   SiReact,
+//   SiPython,
+//   SiGit,
+//   SiGithub,
+//   SiRedux,
+//   SiExpress,
+//   SiMongodb,
+//   SiMongoose,
+//   SiSupabase,
+//   SiNodedotjs,
+//   SiMicrosoftword,
+//   SiMicrosoftexcel,
+//   SiMicrosoftpowerpoint,
+//   SiMicrosoftoutlook,
+// } from 'react-icons/si';
+
+export const skillsData = [
+  // 💻 Tech Skills
+  { id: 1, name: 'HTML', category: 'tech', icon: "/svg/html-svgrepo-com.svg" },
+  { id: 2, name: 'CSS', category: 'tech', icon: "/svg/css-3-svgrepo-com.svg" },
+  { id: 3, name: 'JavaScript', category: 'tech', icon: "/public/svg/javascript-svgrepo-com.svg" },
+  { id: 4, name: 'Bootstrap', category: 'tech', icon:"/svg/bootstrap-svgrepo-com.svg" },
+  { id: 5, name: 'Tailwind CSS', category: 'tech', icon: "/public/svg/tailwind-svgrepo-com.svg" },
+  { id: 6, name: 'React', category: 'tech', icon: "/public/svg/react-svgrepo-com.svg" },
+  { id: 7, name: 'Python', category: 'tech', icon: "/public/svg/python-svgrepo-com.svg" },
+  { id: 8, name: 'Git', category: 'tech', icon: "/public/svg/git-svgrepo-com.svg"},
+  { id: 9, name: 'GitHub', category: 'tech', icon: "/public/svg/github-color-svgrepo-com.svg" },
+  { id: 10, name: 'Redux Toolkit', category: 'tech', icon: "/public/svg/redux-svgrepo-com.svg" },
+  // { id: 11, name: 'Zustand', category: 'tech', icon: ""},
+  { id: 11, name: 'Node.js', category: 'tech', icon: "/public/svg/node-svgrepo-com.svg" },
+  { id: 12, name: 'Express.js', category: 'tech', icon: "" },
+  { id: 13, name: 'MongoDB', category: 'tech', icon: "/public/svg/mongo-svgrepo-com.svg" },
+  // { id: 15, name: 'Mongoose', category: 'tech', icon: "" },
+  { id: 14, name: 'Supabase', category: 'tech', icon: "/public/svg/icons8-supabase.svg" },
+
+  // 📊 Office Skills
+  { id: 15, name: 'Word', category: 'office', icon: "/public/svg/word-svgrepo-com.svg" },
+  { id: 16, name: 'PowerPoint', category: 'office', icon:"/public/svg/powerpoint-svgrepo-com.svg"  },
+  { id: 17, name: 'Excel', category: 'office', icon: "/public/svg/excel-svgrepo-com.svg" },
+  { id: 18, name: 'Outlook', category: 'office', icon: "/public/svg/ms-outlook-svgrepo-com.svg" },
+  // 🧠 Soft Skills (بدون logos حقيقية → نتركها generic)
+  { id: 19, name: 'Patience', category: 'soft', icon: "/public/svg/icons8-sand-clock-16.png" },
+  { id: 20, name: 'Teamwork', category: 'soft', icon: "/public/svg/teamwork-svgrepo-com.svg" },
+  { id: 21, name: 'Marketing', category: 'soft', icon: "/public/svg/marketing-market-social-svgrepo-com.svg" },
+  { id: 21, name: 'Problem Solving', category: 'soft', icon: "/public/svg/think-creative-thinking-svgrepo-com.svg" },
+];

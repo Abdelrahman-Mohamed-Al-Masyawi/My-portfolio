@@ -1,4 +1,4 @@
-import { coursesData } from '../context/coursesDate';
+import { coursesData } from '../context/coursesData';
 import '../styles/courses.css';
 export default function Courses() {
   const courses = coursesData;

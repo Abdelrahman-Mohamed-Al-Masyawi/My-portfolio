@@ -115,6 +115,9 @@
     text-align: center;
     color: rgba(253, 111, 0, 1);
   }
+  .title-page-Courses{
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 700px) {
@@ -138,6 +141,9 @@
   .details-title-page-courses {
     padding-left: 20px;
     padding-right:20px;
+  }
+  .title-page-Courses{
+    font-size: 30px;
   }
 }
 @media (min-width: 401px) and (max-width: 650px) {
