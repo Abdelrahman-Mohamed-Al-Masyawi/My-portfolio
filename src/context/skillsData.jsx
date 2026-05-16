@@ -34,7 +34,7 @@ export const skillsData = [
   { id: 10, name: 'Redux Toolkit', category: 'tech', icon: "/svg/redux-svgrepo-com.svg" },
   // { id: 11, name: 'Zustand', category: 'tech', icon: ""},
   { id: 11, name: 'Node.js', category: 'tech', icon: "/svg/node-svgrepo-com.svg" },
-  { id: 12, name: 'Express.js', category: 'tech', icon: "/public/svg/express-js.svg" },
+  { id: 12, name: 'Express.js', category: 'tech', icon: "/svg/express-js.svg" },
   { id: 13, name: 'MongoDB', category: 'tech', icon: "/svg/mongo-svgrepo-com.svg" },
   // { id: 15, name: 'Mongoose', category: 'tech', icon: "" },
   { id: 14, name: 'Supabase', category: 'tech', icon: "/svg/icons8-supabase.svg" },
@@ -48,5 +48,5 @@ export const skillsData = [
   { id: 19, name: 'Patience', category: 'soft', icon: "/svg/icons8-sand-clock-16.png" },
   { id: 20, name: 'Teamwork', category: 'soft', icon: "/svg/teamwork-svgrepo-com.svg" },
   { id: 21, name: 'Marketing', category: 'soft', icon: "/svg/marketing-market-social-svgrepo-com.svg" },
-  { id: 21, name: 'Problem Solving', category: 'soft', icon: "/svg/think-creative-thinking-svgrepo-com.svg" },
+  { id: 22, name: 'Problem Solving', category: 'soft', icon: "/svg/think-creative-thinking-svgrepo-com.svg" },
 ];

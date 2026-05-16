@@ -5,6 +5,7 @@ import useResponsive from './hooks/useResponsive';
 import AboutMe from './pages/AboutMe';
 import Courses from './pages/Courses';
 import Home from './pages/Home';
+import Projects from './pages/project';
 import Skills from './pages/Skills';
 import './styles/Layout.css';
 
@@ -17,6 +18,7 @@ export default function Layout() {
       <Home />
       <AboutMe/>
       <Skills/>
+      <Projects/>
       <Courses/>
       {showSidebar && <Sidebar />}
     </div>

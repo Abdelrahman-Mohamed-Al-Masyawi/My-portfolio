@@ -14,7 +14,7 @@ export default function Courses() {
       <div className='container-courses'>
         {courses?.map((cours) => {
           return (
-            <div className='card'>
+            <div key={cours.id} className='card'>
               <span className='icon-card'>{cours.icon}</span>
               <h3 className='title-card'>{cours.title}</h3>
               <p className='details-card'>{cours.details}</p>
