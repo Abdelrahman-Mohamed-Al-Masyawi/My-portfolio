@@ -15,8 +15,10 @@ export default function Courses() {
         {courses?.map((cours) => {
           return (
             <div key={cours.id} className='card'>
-              <span className='icon-card'>{cours.icon}</span>
-              <h3 className='title-card'>{cours.title}</h3>
+              <div className='header-card'>
+                <span className='icon-card'>{cours.icon}</span>
+                <h3 className='title-card'>{cours.title}</h3>
+              </div>
               <p className='details-card'>{cours.details}</p>
             </div>
           );

@@ -1,20 +1,25 @@
 import { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { projectsData } from '../context/projectsData';
 import '../styles/projects.css';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 export default function Projects() {
   const [paginationImg, setPaginationImg] = useState({});
 
-function handlePlusPaginationImg(el) {
-  const currentImg = paginationImg[el.id] || 0;
+  function handlePlusPaginationImg(el) {
+    const currentImg = paginationImg[el.id] || 0;
 
-  if (currentImg < el.imgs.length - 1) {
-    setPaginationImg((prev) => ({
-      ...prev,
-      [el.id]: currentImg + 1,
-    }));
+    if (currentImg < el.imgs.length - 1) {
+      setPaginationImg((prev) => ({
+        ...prev,
+        [el.id]: currentImg + 1,
+      }));
+    }
   }
-}
 
   function handleMinusPaginationImg(el) {
     const currentImg = paginationImg[el.id] || 0;
@@ -42,11 +47,19 @@ function handlePlusPaginationImg(el) {
         {projectsData.map((el) => {
           return (
             <div key={el.id} className='card-projects'>
-              <img src={el.imgs[paginationImg[el.id] || 0]} className='img-project' alt={el.name} />
-              <div className='container-icon-direction'>
-                <FaArrowLeft onClick={() => handleMinusPaginationImg(el)} className='icon-direction' />
-                <FaArrowRight onClick={() =>handlePlusPaginationImg(el)} className='icon-direction' />
-              </div>
+              <Swiper
+                modules={[Navigation, Pagination]}
+                navigation={true}
+                pagination={{ clickable: true }}
+                spaceBetween={20}
+                slidesPerView={1}>
+                {el.imgs.map((img, index) => (
+                  <SwiperSlide className='relative w-full h-[250px] overflow-hidden rounded-xl bg-gray-800' key={index}>
+                    <img className='w-full h-full object-cover' src={img} alt={el.name} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
               <div className='container-details-card-projects'>
                 <div className='container-titles'>
                   <span className='project-name'>{el.name}</span>

@@ -3,6 +3,7 @@ import Sidebar from './components/sidebar';
 import { useAppContext } from './context/AppContext';
 import useResponsive from './hooks/useResponsive';
 import AboutMe from './pages/AboutMe';
+import Contact from './pages/contact';
 import Courses from './pages/Courses';
 import Home from './pages/Home';
 import Projects from './pages/project';
@@ -20,6 +21,7 @@ export default function Layout() {
       <Skills/>
       <Projects/>
       <Courses/>
+      <Contact/>
       {showSidebar && <Sidebar />}
     </div>
   );

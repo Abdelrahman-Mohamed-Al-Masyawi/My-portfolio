@@ -2,7 +2,7 @@ import { FaReact, FaNodeJs, FaCalculator, FaLanguage, FaGraduationCap } from 're
 
 import { PiCertificateBold } from 'react-icons/pi';
 
-const styleIcon = { width: '55px', height: '55px' };
+const styleIcon = { width: '55px', height: '55px',color:"#ffffff" };
 
 export const coursesData = [
   {
@@ -10,7 +10,7 @@ export const coursesData = [
     title: 'ICDL',
     details: 'Office tools: Word, Excel, PowerPoint, Outlook and basic computer skills',
     year: '2024',
-    icon: <PiCertificateBold style={styleIcon} />,
+    icon: <img src='/svg/Logo_ICDL.svg' style={styleIcon} />,
     academy: 'Self Learning',
   },
   {
@@ -26,7 +26,7 @@ export const coursesData = [
     title: 'Financial Accounting',
     details: 'Journal entries, Excel bookkeeping, ledger and financial statements',
     year: '2024',
-    icon: <FaCalculator style={styleIcon} />,
+    icon: <img src="/public/svg/calculator-svgrepo-com (1).svg" style={styleIcon} />,
     academy: 'Self Learning',
   },
   {
@@ -34,7 +34,7 @@ export const coursesData = [
     title: 'React Development',
     details: 'Modern web apps using components, hooks, routing and state management',
     year: '2025',
-    icon: <FaReact style={styleIcon} />,
+    icon: <img src="/svg/react-svgrepo-com.svg" style={styleIcon} />,
     academy: 'Jonas Schmedtmann',
   },
   {
@@ -42,7 +42,7 @@ export const coursesData = [
     title: 'Node.js Backend',
     details: 'REST APIs, Express.js, authentication and databases',
     year: '2025',
-    icon: <FaNodeJs style={styleIcon} />,
+    icon: <img src='/public/svg/node-svgrepo-com.svg' style={styleIcon} />,
     academy: 'Jonas Schmedtmann',
   },
 ];

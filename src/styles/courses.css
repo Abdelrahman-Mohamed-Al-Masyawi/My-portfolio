@@ -45,8 +45,8 @@
   flex-wrap: wrap;
 }
 .card {
-  width: 400px;
-  height: 322px !important;
+  width: 350px;
+  height: 270px !important;
   border-radius: 24px;
   padding: 34px;
   background: rgba(255, 255, 255, 0.04) !important;
@@ -57,6 +57,12 @@
 
 .card:hover {
   background: rgba(239, 225, 225, 0.2) !important;
+}
+
+.header-card{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .card:hover:hover .details-card {
   color: white;
@@ -74,7 +80,7 @@
   font-family: Lato;
   font-weight: 700;
   font-style: Bold;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: rgba(253, 111, 0, 1);
 }
@@ -111,7 +117,7 @@
     font-family: Lato;
     font-weight: 700;
     font-style: Bold;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     color: rgba(253, 111, 0, 1);
   }
@@ -148,8 +154,7 @@
 }
 @media (min-width: 401px) and (max-width: 650px) {
   .card {
-    width: 400px !important;
-    height: 322px !important;
+    width: 350px !important;
     border-radius: 24px;
     padding: 34px;
     background: rgba(255, 255, 255, 0.04) !important;
@@ -157,8 +162,7 @@
 }
 @media (min-width: 651px) and (max-width: 700px) {
   .card {
-    width: clamp(300px, 45%, 400px) !important;
-    height: 322px !important;
+    width: clamp(300px, 45%, 350px) !important;
     border-radius: 24px;
     padding: 34px;
     background: rgba(255, 255, 255, 0.04) !important;
@@ -191,8 +195,7 @@
     flex-wrap: wrap;
   }
   .card {
-    width: 300px !important;
-    height: 322px !important;
+  
     border-radius: 24px;
     padding: 34px;
     background: rgba(255, 255, 255, 0.04) !important;
@@ -213,8 +216,7 @@
     flex-wrap: wrap;
   }
   .card {
-    width: 400px;
-    height: 322px !important;
+  
     border-radius: 24px;
     padding: 34px;
     background: rgba(255, 255, 255, 0.04) !important;
@@ -234,9 +236,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .card {
-    width: 30%;
-  }
+  
   .container-courses {
     gap: 10px;
     flex-wrap: wrap;
@@ -251,9 +251,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .card {
-    width: 400px;
-  }
+  
   .container-courses {
     gap: 10px;
     flex-wrap: wrap;
