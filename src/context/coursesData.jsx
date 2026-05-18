@@ -26,7 +26,7 @@ export const coursesData = [
     title: 'Financial Accounting',
     details: 'Journal entries, Excel bookkeeping, ledger and financial statements',
     year: '2024',
-    icon: <img src="/public/svg/calculator-svgrepo-com (1).svg" style={styleIcon} />,
+    icon: <img src="/svg/calculator-svgrepo-com (1).svg" style={styleIcon} />,
     academy: 'Self Learning',
   },
   {
@@ -42,7 +42,7 @@ export const coursesData = [
     title: 'Node.js Backend',
     details: 'REST APIs, Express.js, authentication and databases',
     year: '2025',
-    icon: <img src='/public/svg/node-svgrepo-com.svg' style={styleIcon} />,
+    icon: <img src='/svg/node-svgrepo-com.svg' style={styleIcon} />,
     academy: 'Jonas Schmedtmann',
   },
 ];
