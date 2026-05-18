@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import '../styles/Home.css';
 import '../styles/responsive/HomeResponsive.css';
+import GroupIcons from '../components/groupIcons';
 
 export default function Home() {
   return (
@@ -17,22 +18,7 @@ export default function Home() {
               </div>
               <div className='jop'>Front-end Developer</div>
             </div>
-            <div className='container-contacts-icon'>
-              <span className='rounded-icons-container'>
-                <FaWhatsapp color='#bababa' className='contacts-icon' />
-              </span>
-              <span className='rounded-icons-container'>
-                <FaLinkedin color='#bababa' className='contacts-icon' />
-              </span>
-              <span className='rounded-icons-container'>
-                <FaPhone color='#bababa' className='contacts-icon' />
-              </span>
-              <span className='rounded-icons-container'>
-                <FaGithub color='#bababa' className='contacts-icon' />
-              </span>
-
-              {/* <FaEmail className='contacts-icon' /> */}
-            </div>
+            <GroupIcons/>
           </div>
           <div className='container-btns'>
             <button className='btn-HireMe'>Hire Me</button>
@@ -68,3 +54,4 @@ export default function Home() {
     </div>
   );
 }
+

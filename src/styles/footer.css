@@ -1,0 +1,19 @@
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background:   rgba(255, 255, 255, 0.04);
+}
+
+.logo-footer {
+  font-family: K2D;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  text-align: justify;
+  background: linear-gradient(90.48deg, #984300 0.34%, #fd6f00 42.06%, #ca5900 90.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

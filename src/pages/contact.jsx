@@ -54,6 +54,11 @@ function ClientForm() {
   const [loading, setLoading] = useState(false);
   // ===================
 
+  function handlerNumberPhone(e){
+    const onlyNumber=e.target.value.replace(/\D/g,"")
+    setPhone(onlyNumber)
+
+  }
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -109,9 +114,7 @@ function ClientForm() {
       <input
         placeholder='Phone'
         value={phone}
-        onChange={(e) => {
-          setPhone(e.target.value);
-        }}
+        onChange={handlerNumberPhone}
         type='text'
         className='input width-input'
         name='client_phone'
@@ -159,7 +162,7 @@ function ClientForm() {
       <button
         disabled={loading}
         type='submit'
-        className={`rounde-lg m-3 mx-auto flex w-full items-center justify-center bg-slate-900 px-4 py-2 text-white shadow-lg hover:bg-slate-700 ${
+        className={` bg-[#fd6f00] rounde-lg m-3 mx-auto flex w-full items-center justify-center px-4 py-2  text-white shadow-lg hover:bg-green-600  ${
           loading ? 'cursor-not-allowed bg-gray-500' : 'bg-slate-900 hover:bg-slate-700'
         }`}>
         {loading ? 'Sending...' : 'Send'}
