@@ -3,9 +3,11 @@ import { useRef, useState } from 'react';
 import toast from 'react-hot-toast';
 import { FaPaperPlane } from 'react-icons/fa';
 import '../styles/contact.css';
+import { useAppContext } from '../context/AppContext';
 export default function Contact() {
+  const {contactRef}=useAppContext()
   return (
-    <section className='container-page-contact'>
+    <section ref={contactRef} className='container-page-contact'>
       <div className='container-title-page-contact'>
         <h2 className='title-page-contact'>Contact me</h2>
         <div className='containerSections'>

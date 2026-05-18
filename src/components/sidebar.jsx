@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
-import { FaBriefcase, FaPhone, FaTimes, FaUser } from 'react-icons/fa';
+import { FaBriefcase, FaFolderOpen, FaGraduationCap, FaPhone, FaTimes, FaTools, FaUser } from 'react-icons/fa';
 import { HiLanguage } from 'react-icons/hi2';
 import { MdDesignServices } from 'react-icons/md';
 import { useAppContext } from '../context/AppContext';
@@ -8,12 +8,24 @@ import '../styles/sidebar.css';
 export default function Sidebar() {
   const [PageActive, setPageActive] = useState('Home');
   const { closeSidebar, language, toggleLanguage } = useAppContext();
+  const {
+    openSidebar,
+    showSidebar,
+    handleScrollTOHome,
+    handleScrollTOContact,
+    handleScrollTOCourses,
+    handleScrollTOSkills,
+    handleScrollTOAbout,
+    handleScrollTOProject,
+  } = useAppContext();
 
-  
   const actions = {
-    ActivePage(value) {
+    ActivePage(value, fn) {
       setPageActive(value);
       closeSidebar();
+      if (fn) {
+        fn();
+      }
     },
     Style(value) {
       let color = ' #ff6a00';
@@ -34,22 +46,44 @@ export default function Sidebar() {
       <p className='name-Jop'>Front-end Developer</p>
 
       <ul className='links'>
-        <li style={{ color: Style('Home') }} className='item-page' onClick={() => ActivePage('Home')}>
+        <li
+          style={{ color: Style('Home') }}
+          className='item-page'
+          onClick={() => ActivePage('Home', handleScrollTOHome)}>
           <AiFillHome /> <span>Home</span>
         </li>
-        <li style={{ color: Style('Services') }} className='item-page' onClick={() => ActivePage('Services')}>
-          <MdDesignServices /> <span>Services</span>
+        <li
+          style={{ color: Style('about me') }}
+          className='item-page'
+          onClick={() => ActivePage('about me', handleScrollTOAbout)}>
+          <FaUser /> <span>about me</span>
         </li>
-        <li style={{ color: Style('About') }} className='item-page' onClick={() => ActivePage('About')}>
-          <FaUser /> <span>About me</span>
+        <li
+          style={{ color: Style('skills') }}
+          className='item-page'
+          onClick={() => ActivePage('skills', handleScrollTOSkills)}>
+          <FaTools /> <span>skills </span>
         </li>
-        <li style={{ color: Style('Portfolio') }} className='item-page' onClick={() => ActivePage('Portfolio')}>
-          <FaBriefcase />
-          <span>Portfolio</span>
+        <li
+          style={{ color: Style('projects') }}
+          className='item-page'
+          onClick={() => ActivePage('projects', handleScrollTOProject)}>
+          <FaFolderOpen />
+          <span>projects</span>
         </li>
-        <li style={{ color: Style('Contact') }} className='item-page' onClick={() => ActivePage('Contact')}>
+        <li
+          style={{ color: Style('courses') }}
+          className='item-page'
+          onClick={() => ActivePage('courses', handleScrollTOCourses)}>
+          <FaGraduationCap />
+          <span>courses </span>
+        </li>
+        <li
+          style={{ color: Style('contact') }}
+          className='item-page'
+          onClick={() => ActivePage('contact', handleScrollTOCourses)}>
           <FaPhone />
-          <span>Contact me</span>
+          <span>contact </span>
         </li>
       </ul>
 

@@ -1,6 +1,6 @@
 header {
-  padding-top: 20px;
-  height: 43px;
+  padding-top: 5px;
+  height: 73px;
   display: flex;
   justify-content: space-between;
   align-items: center !important;
@@ -8,6 +8,11 @@ header {
   opacity: 1;
   padding-right: 80px;
   padding-left: 80px;
+  /* background-color: rgba(255, 255, 255, 0.04); */
+  /* position: sticky; */
+  /* z-index: 100; */
+  top: 0;
+
 }
 
 .logo {

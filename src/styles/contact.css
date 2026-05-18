@@ -82,6 +82,7 @@
   width: 49%;
 }
 
+
 @media (max-width: 550px){
   .width-input {
   width: 100%;
@@ -112,6 +113,11 @@
 }
 }
 
+@media (max-width: 550px){
+ .linkText{
+    font-size: 8px;
+  } 
+}
 @media (min-width: 700px) and (max-width: 1100px) {
   .width-input {
   width: 100%;

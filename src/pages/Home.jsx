@@ -1,11 +1,15 @@
-import { FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import GroupIcons from '../components/groupIcons';
+import { useAppContext } from '../context/AppContext';
 import '../styles/Home.css';
 import '../styles/responsive/HomeResponsive.css';
-import GroupIcons from '../components/groupIcons';
 
+import { skillsData } from './../context/skillsData';
+
+import { coursesData } from './../context/coursesData';
 export default function Home() {
+  const { homeRef } = useAppContext();
   return (
-    <div className='container-home'>
+    <div ref={homeRef} className='container-home'>
       {/* //*information */}
       <div className='container-information'>
         {/* //? معلومات */}
@@ -18,7 +22,7 @@ export default function Home() {
               </div>
               <div className='jop'>Front-end Developer</div>
             </div>
-            <GroupIcons/>
+            <GroupIcons />
           </div>
           <div className='container-btns'>
             <button className='btn-HireMe'>Hire Me</button>
@@ -27,20 +31,20 @@ export default function Home() {
         </div>
         {/* //?احصاءات */}
         <div className='statistics'>
-          <div className='container-one-statistic'>
+          {/* <div className='container-one-statistic'>
             <p className='number'>5</p>
             <p className='name-statistic'>Experiences</p>
-          </div>
+          </div> */}
           <div className='container-one-statistic'>
-            <p className='number'>5</p>
+            <p className='number'>{coursesData.length}</p>
             <p className='name-statistic'>Project done</p>
           </div>
           <div className='container-one-statistic'>
-            <p className='number'>5</p>
+            <p className='number'>{coursesData.length}</p>
             <p className='name-statistic'>courses</p>
           </div>
           <div className='container-one-statistic not-border'>
-            <p className='number'>5</p>
+            <p className='number'>{skillsData.length}</p>
             <p className='name-statistic'>skills</p>
           </div>
         </div>
@@ -54,4 +58,3 @@ export default function Home() {
     </div>
   );
 }
-

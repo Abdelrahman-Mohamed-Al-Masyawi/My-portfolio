@@ -4,7 +4,9 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background:   rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+
 }
 
 .logo-footer {
@@ -16,4 +18,23 @@
   background: linear-gradient(90.48deg, #984300 0.34%, #fd6f00 42.06%, #ca5900 90.34%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.copyright {
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+  padding-top: 20px;
+  color: rgba(149, 149, 149, 1);
+  font-size: 25px;
+  direction: ltr;
+}
+
+@media (max-width: 500px) {
+  .logo-footer {
+  font-size: 20px;
+}
+  .copyright {
+    margin-top: 10px;
+  padding-top: 10px;
+    font-size: 15px;
+  }
 }

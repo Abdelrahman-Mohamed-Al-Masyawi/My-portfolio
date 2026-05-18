@@ -7,9 +7,10 @@ import '../styles/projects.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useAppContext } from '../context/AppContext';
 export default function Projects() {
   const [paginationImg, setPaginationImg] = useState({});
-
+const {projectRef}=useAppContext()
   function handlePlusPaginationImg(el) {
     const currentImg = paginationImg[el.id] || 0;
 
@@ -31,7 +32,7 @@ export default function Projects() {
     }
   }
   return (
-    <section className='container-page-projects'>
+    <section ref={projectRef} className='container-page-projects'>
       <h2 className='title-page-projects'>projects</h2>
       {/**
       <div className='container-btns-filter-projects'>

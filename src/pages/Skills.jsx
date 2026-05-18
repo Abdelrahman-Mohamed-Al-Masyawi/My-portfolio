@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { skillsData } from '../context/skillsData';
 import '../styles/Skills.css';
+import { useAppContext } from '../context/AppContext';
 export default function Skills() {
   const [filterSkills, setFilterSkills] = useState('tech');
-
+ const { skillsRef } = useAppContext();
   function handleFilter(value) {
     setFilterSkills(value);
   }
@@ -28,7 +29,7 @@ export default function Skills() {
         };
   }
   return (
-    <section className='container-page-skills'>
+    <section ref={skillsRef} className='container-page-skills'>
       <h2 className='title-page-skills'>My Skills</h2>
       <div className='container-btns-filter-skills'>
         <button style={BackgroundBtn('All')} onClick={() => handleFilter('All')} className='btn-filter-skills'>

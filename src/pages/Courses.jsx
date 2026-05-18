@@ -1,9 +1,11 @@
+import { useAppContext } from '../context/AppContext';
 import { coursesData } from '../context/coursesData';
 import '../styles/courses.css';
 export default function Courses() {
   const courses = coursesData;
+  const { coursesRef } = useAppContext();
   return (
-    <section className='container-courses'>
+    <section ref={coursesRef} className='container-courses'>
       <div className='container-title-page'>
         <h2 className='title-page-Courses'>Courses</h2>
         <p className='details-title-page-courses'>

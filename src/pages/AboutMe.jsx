@@ -1,8 +1,10 @@
+import { useAppContext } from '../context/AppContext';
 import '../styles/AboutMe.css';
 
 export default function AboutMe() {
+  const { aboutRf } = useAppContext();
   return (
-    <div className='container-page-aboutMe'>
+    <div ref={aboutRf} className='container-page-aboutMe'>
       <h2 className='title-page-aboutMe'>About Me</h2>
       <p className='content-page-aboutMe'>
         My name is Abdelrahman Mohamed. I became interested in technology and in completing tasks in a faster and more
