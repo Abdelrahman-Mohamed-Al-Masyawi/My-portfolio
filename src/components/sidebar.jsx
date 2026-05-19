@@ -48,39 +48,39 @@ export default function Sidebar() {
 
       <ul className='links'>
         <li
-          style={{ color: Style('Home') }}
+          // style={{ color: Style('Home') }}
           className='item-page'
           onClick={() => ActivePage('Home', handleScrollTOHome)}>
           <AiFillHome /> <span>Home</span>
         </li>
         <li
-          style={{ color: Style('about me') }}
+          // style={{ color: Style('about me') }}
           className='item-page'
           onClick={() => ActivePage('about me', handleScrollTOAbout)}>
           <FaUser /> <span>about me</span>
         </li>
         <li
-          style={{ color: Style('skills') }}
+          // style={{ color: Style('skills') }}
           className='item-page'
           onClick={() => ActivePage('skills', handleScrollTOSkills)}>
           <FaTools /> <span>skills </span>
         </li>
         <li
-          style={{ color: Style('projects') }}
+          // style={{ color: Style('projects') }}
           className='item-page'
           onClick={() => ActivePage('projects', handleScrollTOProject)}>
           <FaFolderOpen />
           <span>projects</span>
         </li>
         <li
-          style={{ color: Style('courses') }}
+          // style={{ color: Style('courses') }}
           className='item-page'
           onClick={() => ActivePage('courses', handleScrollTOCourses)}>
           <FaGraduationCap />
           <span>courses </span>
         </li>
         <li
-          style={{ color: Style('contact') }}
+          // style={{ color: Style('contact') }}
           className='item-page'
           onClick={() => ActivePage('contact', handleScrollTOContact)}>
           <FaPhone />
