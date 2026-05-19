@@ -1,6 +1,8 @@
  .layout {
   background: rgba(18, 18, 18, 1);
   height: auto;
+  padding: 0;
+  margin: 0;
 } 
 
 

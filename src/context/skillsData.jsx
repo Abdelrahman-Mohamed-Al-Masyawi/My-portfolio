@@ -45,7 +45,7 @@ export const skillsData = [
   { id: 17, name: 'Excel', category: 'office', icon: "/svg/excel-svgrepo-com.svg" },
   { id: 18, name: 'Outlook', category: 'office', icon: "/svg/ms-outlook-svgrepo-com.svg" },
   // 🧠 Soft Skills (بدون logos حقيقية → نتركها generic)
-  { id: 19, name: 'Patience', category: 'soft', icon: "/svg/icons8-sand-clock-16.png" },
+  { id: 19, name: 'Patience', category: 'soft', icon: "/svg/patience_16314833.png" },
   { id: 20, name: 'Teamwork', category: 'soft', icon: "/svg/teamwork-svgrepo-com.svg" },
   { id: 21, name: 'Marketing', category: 'soft', icon: "/svg/marketing-market-social-svgrepo-com.svg" },
   { id: 22, name: 'Problem Solving', category: 'soft', icon: "/svg/think-creative-thinking-svgrepo-com.svg" },

@@ -37,7 +37,6 @@ export const projectsData = [
       '/imgs/professional accountant/3.png',
       '/imgs/professional accountant/4.png',
       '/imgs/professional accountant/5.png',
-      '/imgs/professional accountant/6.png',
       '/imgs/professional accountant/7.png',
       '/imgs/professional accountant/8.png',
       '/imgs/professional accountant/9.png',

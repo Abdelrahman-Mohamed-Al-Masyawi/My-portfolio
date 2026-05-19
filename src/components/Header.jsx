@@ -5,16 +5,14 @@ import '../styles/Header.css';
 import useResponsive from './../hooks/useResponsive';
 export default function Header() {
   const { isTabletWithPhone } = useResponsive();
-  const {
-    openSidebar,
-    showSidebar,
-
-  } = useAppContext();
+  const { openSidebar, showSidebar, handleScrollTOContact } = useAppContext();
 
   if (isTabletWithPhone) {
     return (
       <header>
-        <div className='logo'>LOGO</div>
+        <div className='logo'>
+          <img className='img-logo' src='/logo-Abdelrahman1.png' alt='' />
+        </div>
         <RxHamburgerMenu className='iconMenu' onClick={openSidebar} />
       </header>
     );
@@ -22,9 +20,13 @@ export default function Header() {
 
   return (
     <header>
-      <div className='logo'>LOGO</div>
+      <div className='logo'>
+        <img className='img-logo' src='/logo-Abdelrahman1.png' alt='' />
+      </div>
       <Navigation />
-      <button className='btn-hire-me'>Hire Me</button>
+      <button onClick={() => handleScrollTOContact()} className='btn-hire-me'>
+        Hire Me
+      </button>
     </header>
   );
 }

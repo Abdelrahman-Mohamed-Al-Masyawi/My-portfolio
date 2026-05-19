@@ -12,11 +12,12 @@ export default function Sidebar() {
     openSidebar,
     showSidebar,
     handleScrollTOHome,
-    handleScrollTOContact,
+    
     handleScrollTOCourses,
     handleScrollTOSkills,
     handleScrollTOAbout,
     handleScrollTOProject,
+    handleScrollTOContact,
   } = useAppContext();
 
   const actions = {
@@ -81,7 +82,7 @@ export default function Sidebar() {
         <li
           style={{ color: Style('contact') }}
           className='item-page'
-          onClick={() => ActivePage('contact', handleScrollTOCourses)}>
+          onClick={() => ActivePage('contact', handleScrollTOContact)}>
           <FaPhone />
           <span>contact </span>
         </li>

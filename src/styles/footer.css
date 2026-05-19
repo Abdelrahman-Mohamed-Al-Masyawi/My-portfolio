@@ -6,9 +6,13 @@
   width: 100%;
   background: rgba(255, 255, 255, 0.04);
   padding: 20px;
+   box-shadow: 0 -4px 15px rgb(250, 110, 0, 0.1);
 
 }
-
+.container-logo{
+  display: flex;
+  gap: 22px;
+}
 .logo-footer {
   font-family: K2D;
   font-weight: 700;
