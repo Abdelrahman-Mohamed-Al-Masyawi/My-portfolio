@@ -4,7 +4,7 @@
   padding: 20px 70px;
 }
 .title-page-aboutMe {
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -12,7 +12,7 @@
 }
 
 .content-page-aboutMe {
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 500;
   font-style: Medium;
   font-size: 20px;

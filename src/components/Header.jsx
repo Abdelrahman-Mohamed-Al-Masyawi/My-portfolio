@@ -10,8 +10,12 @@ export default function Header() {
   if (isTabletWithPhone) {
     return (
       <header>
-        <div className='logo'>
+        <div className=' logo-mobile'>
           <img className='img-logo' src='/logo-Abdelrahman1.png' alt='' />
+          <div className='my-name-and-jop-inMobile'>
+            <div style={{ color: '#fff' }} className='nameAndJopInMobile'>Abdelrahman Mohamed</div>
+            <div style={{ color: '#fff' }} className='nameAndJopInMobile'>Front-end developer</div>
+          </div>
         </div>
         <RxHamburgerMenu className='iconMenu' onClick={openSidebar} />
       </header>

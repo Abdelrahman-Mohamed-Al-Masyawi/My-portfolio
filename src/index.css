@@ -8,3 +8,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url('/public/fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'K2D';
+  src: url('/public/fonts/K2D/K2D-Regular.ttf');
+}

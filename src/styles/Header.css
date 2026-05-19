@@ -14,10 +14,11 @@ header {
   z-index: 100;
   box-shadow: 0 2px 8px rgb(250, 110, 0, 0.1);
   top: 0;
+  padding-bottom: 7px;
 }
 
 .logo {
-  font-family: K2D;
+  font-family: "K2D";
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
@@ -28,8 +29,35 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.logo-mobile {
+  font-family: "K2D";
+  font-style: Bold;
+  text-align: justify;
+}
+.logo-mobile {
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  align-items: center;
+}
+.my-name-and-jop-inMobile {
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+.nameAndJopInMobile {
+  color: #ffff !important;
+  font-size: 12px;
+  /* position: relative; */
+  /* z-index: 10000000; */
+}
+
 .img-logo {
-  height: 40px;
+  height: 35px;
 }
 .pages {
   width: 653px;
@@ -41,7 +69,7 @@ header {
 }
 
 .one-page {
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 500;
   font-style: Medium;
   font-size: 20px;
@@ -66,7 +94,7 @@ header {
   padding-bottom: 12px;
   padding-left: 40px;
   background: linear-gradient(94.36deg, #fd6f00 3.1%, #e46400 94.54%);
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: Bold;
   font-size: 16px;
@@ -124,5 +152,12 @@ header {
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .img-logo {
+    height: 30px;
+  }
+  .nameAndJopInMobile {
+    color: #ffff !important;
+    font-size: 10px;
   }
 }

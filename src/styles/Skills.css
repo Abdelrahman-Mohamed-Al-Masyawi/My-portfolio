@@ -4,7 +4,7 @@
 }
 
 .title-page-skills {
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -28,7 +28,7 @@
   text-align: center;
   background: linear-gradient(94.36deg, #fd6f00 3.1%, #e46400 94.54%);
   color: rgba(255, 255, 255, 1);
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 18px;
 }
 

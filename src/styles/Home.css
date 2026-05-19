@@ -52,7 +52,7 @@
   height: 29px;
   /* angle: 0 deg; */
   opacity: 1;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 600;
   font-style: SemiBold;
   font-size: 24px;
@@ -66,7 +66,7 @@
   height: 34px;
   /* angle: 0 deg; */
   opacity: 1;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
@@ -80,10 +80,10 @@
   /* angle: 0 deg; */
   opacity: 1;
   margin-top: 20px;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 900;
   font-style: Black;
-  font-size: 58px;
+  font-size: 50px;
   /* leading-trim: NONE; */
   line-height: 100%;
   letter-spacing: 3%;
@@ -163,7 +163,7 @@
   height: 29px;
   /* angle: 0 deg; */
   opacity: 1;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 800;
   font-style: ExtraBold;
   font-size: 24px;
@@ -178,7 +178,7 @@
   height: 24px;
   /* angle: 0 deg; */
   opacity: 1;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: Bold;
   font-size: 15px;
@@ -203,7 +203,7 @@
   padding-left: 40px;
   border-radius: 8px;
   background: linear-gradient(94.36deg, #fd6f00 3.1%, #e46400 94.54%);
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
@@ -236,7 +236,7 @@
   padding-left: 40px;
   border-radius: 8px;
   border-width: 2px;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
@@ -436,7 +436,7 @@
     width: clamp(70px, 40%, 100px);
     font-size: clamp(12px, 14px, 16px);
     height: 33px;
-    font-family: Lato;
+    font-family: "Lato";
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 3%;
@@ -637,7 +637,7 @@
     width: clamp(90px, 40%, 120px);
     font-size: clamp(14px, 17px, 19px);
     height: 37px;
-    font-family: Lato;
+    font-family: "Lato";
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 3%;
@@ -838,7 +838,7 @@
     width: clamp(90px, 40%, 120px);
     font-size: clamp(14px, 17px, 19px);
     height: 37px;
-    font-family: Lato;
+    font-family: "Lato";
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 3%;
