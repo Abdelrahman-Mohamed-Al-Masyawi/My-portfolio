@@ -18,6 +18,7 @@
     "bootstrap": "^5.3.6",
     "emailjs": "^5.0.0",
     "i18next": "^25.3.2",
+    "i18next-browser-languagedetector": "^8.2.1",
     "rc-progress": "^4.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

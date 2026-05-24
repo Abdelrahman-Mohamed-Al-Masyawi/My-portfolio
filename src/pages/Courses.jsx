@@ -1,16 +1,17 @@
+import { useTranslation } from 'react-i18next';
 import { useAppContext } from '../context/AppContext';
 import { coursesData } from '../context/coursesData';
 import '../styles/courses.css';
 export default function Courses() {
   const courses = coursesData;
   const { coursesRef } = useAppContext();
+  const { t } = useTranslation('courses');
   return (
     <section ref={coursesRef} className='container-courses'>
       <div className='container-title-page'>
-        <h2 className='title-page-Courses'>Courses</h2>
+        <h2 className='title-page-Courses'>{t("Courses")}</h2>
         <p className='details-title-page-courses'>
-          Dedicated to lifelong learning, building innovative solutions, and growing through real-world projects and
-          modern technologies.
+          {t("Dedicated to lifelong learning, building innovative solutions, and growing through real-world projects and modern technologies.")}
         </p>
       </div>
       <div className='container-courses'>
@@ -19,9 +20,9 @@ export default function Courses() {
             <div key={cours.id} className='card'>
               <div className='header-card'>
                 <span className='icon-card'>{cours.icon}</span>
-                <h3 className='title-card'>{cours.title}</h3>
+                <h3 className='title-card'>{t(cours.title)}</h3>
               </div>
-              <p className='details-card'>{cours.details}</p>
+              <p className='details-card'>{t(cours.details)}</p>
             </div>
           );
         })}

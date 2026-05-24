@@ -156,7 +156,7 @@
   padding-top: 6px;
   padding-right: 10px;
   padding-bottom: 6px;
-  border-right-width: 1px;
+  border-right-width: 1px ;
 }
 .number {
   /* width: 29px; */
@@ -187,10 +187,9 @@
   letter-spacing: 3%;
   text-align: justify;
   color: rgba(223, 223, 223, 1);
+  margin-top: 10px;
 }
-.not-border {
-  border: none;
-}
+
 .btn-HireMe {
   width: 156px;
   height: 48px;
@@ -225,7 +224,7 @@
   display: flex;
 }
 .btn-cv {
-  width: 209px;
+  /* width: 209px; */
   height: 48px;
   gap: 10px;
   /* angle: 0 deg; */
@@ -631,6 +630,7 @@
     font-size: clamp(10px, 12px, 17px);
     text-align: start;
     padding-left: 0;
+    margin-top: 10px;
   }
 
   .btn-HireMe {
@@ -832,6 +832,7 @@
     font-size: clamp(10px, 12px, 17px);
     text-align: start;
     padding-left: 0;
+    margin-top: 10px;
   }
 
   .btn-HireMe {
@@ -992,6 +993,7 @@
     font-size: clamp(10px, 12px, 17px);
     text-align: start;
     padding-left: 0;
+    margin-top: 10px;
   }
 
   .container-btns {
@@ -1124,6 +1126,7 @@
     font-size: clamp(10px, 12px, 17px);
     text-align: start;
     padding-left: 0;
+    margin-top: 10px;
   }
 
   .container-btns {

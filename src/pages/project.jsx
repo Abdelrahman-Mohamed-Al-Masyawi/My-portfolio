@@ -8,9 +8,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useAppContext } from '../context/AppContext';
+import { useTranslation } from 'react-i18next';
 export default function Projects() {
   const [paginationImg, setPaginationImg] = useState({});
-const {projectRef}=useAppContext()
+  const { projectRef } = useAppContext();
+  const { t } = useTranslation('projects');
   function handlePlusPaginationImg(el) {
     const currentImg = paginationImg[el.id] || 0;
 
@@ -33,7 +35,7 @@ const {projectRef}=useAppContext()
   }
   return (
     <section ref={projectRef} className='container-page-projects'>
-      <h2 className='title-page-projects'>projects</h2>
+      <h2 className='title-page-projects'>{t('Projects')}</h2>
       {/**
       <div className='container-btns-filter-projects'>
         <button className='btn-filter-skills'>All</button>
@@ -63,13 +65,13 @@ const {projectRef}=useAppContext()
 
               <div className='container-details-card-projects'>
                 <div className='container-titles'>
-                  <span className='project-name'>{el.name}</span>
+                  <span className='project-name'>{t(el.name)}</span>
                   <a href={el.link} className='link-project'>
-                    visit project
+                    {t('visit project')}
                   </a>
                 </div>
                 <div className='details'>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo libero error esse alias doloribus,
+                  {t(el.details)}
                 </div>
               </div>
             </div>

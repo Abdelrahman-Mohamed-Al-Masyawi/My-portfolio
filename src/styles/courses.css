@@ -25,6 +25,7 @@
   letter-spacing: 3%;
   text-align: center;
   color: rgba(254, 254, 254, 1);
+  margin-bottom: 30px;
 }
 
 .details-title-page-courses {
@@ -36,6 +37,7 @@
   letter-spacing: 3%;
   text-align: justify;
   color: rgba(112, 112, 112, 1);
+  margin-bottom: 30px;
 }
 .container-courses {
   display: flex;

@@ -1,0 +1,23 @@
+{
+  "Courses":"الدورات",
+   "Dedicated to lifelong learning, building innovative solutions, and growing through real-world projects and modern technologies.":"ملتزم بالتعلم المستمر وبناء حلول مبتكرة والنمو من خلال مشاريع حقيقية وتقنيات حديثة",
+
+  
+     "ICDL":"ICDL",
+     "Office tools: Word, Excel, PowerPoint, Outlook and basic computer skills": "أدوات الأوفيس: وورد، إكسل، باوربوينت، أوتلوك ومهارات الحاسب الأساسية",
+
+     "English (A1-A2)":"اللغة الإنجليزية (A1-A2)",
+    "Basic communication skills for daily conversations": "مهارات تواصل أساسية للمحادثات اليومية",
+
+    "Financial Accounting":"المحاسبة المالية",
+     "Journal entries, Excel bookkeeping, ledger and financial statements":"قيود اليومية، الحسابات على Excel، الأستاذ العام والقوائم المالية",
+
+     "React Development":"تطوير React",
+     "Modern web apps using components, hooks, routing and state management":"تطبيقات حديثة باستخدام components و hooks و routing",
+
+     "Node.js Backend":"Node.js Backend",
+     "REST APIs, Express.js, authentication and databases":"بناء REST APIs و Express.js وقواعد البيانات"
+  }
+
+
+

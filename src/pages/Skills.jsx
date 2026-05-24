@@ -1,13 +1,13 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useAppContext } from '../context/AppContext';
 import { skillsData } from '../context/skillsData';
 import '../styles/Skills.css';
-import { useAppContext } from '../context/AppContext';
 export default function Skills() {
+  // variables
   const [filterSkills, setFilterSkills] = useState('tech');
- const { skillsRef } = useAppContext();
-  function handleFilter(value) {
-    setFilterSkills(value);
-  }
+  const { t } = useTranslation('skills');
+  const { skillsRef } = useAppContext();
 
   const skillsFilter = skillsData.filter((el) => {
     if (filterSkills == 'All') {
@@ -15,6 +15,11 @@ export default function Skills() {
     }
     return el.category == filterSkills;
   });
+
+  // functions
+  function handleFilter(value) {
+    setFilterSkills(value);
+  }
 
   function BackgroundBtn(btnName) {
     const style = { background: '#ffff', color: '#000000' };
@@ -28,31 +33,33 @@ export default function Skills() {
           color: ' rgba(255, 255, 255, 1)',
         };
   }
+
+  // ui
   return (
     <section ref={skillsRef} className='container-page-skills'>
-      <h2 className='title-page-skills'>My Skills</h2>
+      <h2 className='title-page-skills'>{t('My Skills')}</h2>
       <div className='container-btns-filter-skills'>
         <button style={BackgroundBtn('All')} onClick={() => handleFilter('All')} className='btn-filter-skills'>
-          All
+          {t('All')}
         </button>
         <button style={BackgroundBtn('tech')} onClick={() => handleFilter('tech')} className='btn-filter-skills'>
-          Tech
+          {t('Tech')}
         </button>
         <button style={BackgroundBtn('office')} onClick={() => handleFilter('office')} className='btn-filter-skills'>
-          Office
+          {t('Office')}
         </button>
         <button style={BackgroundBtn('soft')} onClick={() => handleFilter('soft')} className='btn-filter-skills'>
-          Soft Skills
+          {t('Soft Skills')}
         </button>
       </div>
       <div className='container-card-Skills'>
         {skillsFilter?.map((skill) => {
           return (
-            <div id={skill.id} className='card-Skills'>
+            <div key={skill.id} className='card-Skills'>
               <span className='circle-icons-skills'>
                 <img src={skill.icon} alt={skill.name} className='icon-skills' />
               </span>
-              <span className='name-skills'>{skill.name}</span>
+              <span className='name-skills'>{t(skill.name)}</span>
             </div>
           );
         })}

@@ -1,5 +1,6 @@
 // استدعاء الهوك
 import { createContext, useContext, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // عمل الحاويه لتخزين الحالات بداخلها
 const AppContext = createContext();
@@ -7,11 +8,9 @@ const AppContext = createContext();
 // عمل الكمبوناد الخاص بتخزين كل الحالات والدوال التي يجب مشاركتها مع باقي التطبيق
 
 export default function AppProvider({ children }) {
+  //* variables
   const [showSidebar, setShowSidebar] = useState(false);
   const [language, setLanguage] = useState('English');
-  const openSidebar = () => setShowSidebar(true);
-  const closeSidebar = () => setShowSidebar(false);
-  const toggleLanguage = () => (language === 'English' ? setLanguage('Arabic') : setLanguage('English'));
 
   //?section navbar scrolling to any another section with by using useRef
   const homeRef = useRef(null);
@@ -20,7 +19,23 @@ export default function AppProvider({ children }) {
   const projectRef = useRef(null);
   const coursesRef = useRef(null);
   const contactRef = useRef(null);
-  //function
+  // translation
+  const { t, i18n } = useTranslation();
+
+  // function openSidebar
+  const openSidebar = () => setShowSidebar(true);
+  const closeSidebar = () => setShowSidebar(false);
+
+  // function translation
+  function toggleLanguage() {
+    if (i18n.language === 'en') {
+      i18n.changeLanguage('ar');
+    } else {
+      i18n.changeLanguage('en');
+    }
+  }
+
+  //function scroll
   function handleScrollTOHome() {
     homeRef.current?.scrollIntoView({
       behavior: 'smooth',

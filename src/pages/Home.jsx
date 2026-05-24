@@ -6,8 +6,10 @@ import '../styles/responsive/HomeResponsive.css';
 import { skillsData } from './../context/skillsData';
 
 import { coursesData } from './../context/coursesData';
+import { useTranslation } from 'react-i18next';
 export default function Home() {
   const { homeRef } = useAppContext();
+  const {t}=useTranslation()
   return (
     <div ref={homeRef} className='container-home'>
       {/* //*information */}
@@ -17,16 +19,16 @@ export default function Home() {
           <div className='person-ifo'>
             <div className='info'>
               <div className='container-name'>
-                <div className='hi'>Hi I am</div>
-                <div className='name'>Abdelrahman Mohamed</div>
+                <div className='hi'>{t('Hi I am')}</div>
+                <div className='name'>{t('Abdelrahman Mohamed')}</div>
               </div>
-              <div className='jop'>Front-end Developer</div>
+              <div className='jop'>{t('Front-end Developer')}</div>
             </div>
             <GroupIcons />
           </div>
           <div className='container-btns'>
-            <button className='btn-HireMe'>Hire Me</button>
-            <button className='btn-cv'>Download CV </button>
+            <button className='btn-HireMe'>{t('Hire Me')}</button>
+            <button className='btn-cv'>{t('Download CV')} </button>
           </div>
         </div>
         {/* //?احصاءات */}
@@ -37,15 +39,15 @@ export default function Home() {
           </div> */}
           <div className='container-one-statistic'>
             <p className='number'>{coursesData.length}</p>
-            <p className='name-statistic'>Project done</p>
+            <p className='name-statistic'>{t('projects done')}</p>
           </div>
           <div className='container-one-statistic'>
             <p className='number'>{coursesData.length}</p>
-            <p className='name-statistic'>courses</p>
+            <p className='name-statistic'>{t('courses')}</p>
           </div>
           <div className='container-one-statistic not-border'>
             <p className='number'>{skillsData.length}</p>
-            <p className='name-statistic'>skills</p>
+            <p className='name-statistic'>{t('Skills')}</p>
           </div>
         </div>
       </div>

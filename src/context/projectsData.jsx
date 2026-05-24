@@ -1,9 +1,10 @@
 export const projectsData = [
   {
     id: 1,
-    name: 'burger project',
+    name: 'Burger Project',
     link: 'https://fast-food-1.netlify.app/',
     category: '',
+    details: 'A fast food website with modern UI and ordering system',
     imgs: [
       '/imgs/burger project/1.png',
       '/imgs/burger project/2.png',
@@ -17,6 +18,7 @@ export const projectsData = [
     name: 'pizza project',
     link: 'https://fast-food-restaurant1.netlify.app/',
     category: '',
+    details: 'Restaurant website with menu, ordering and responsive design',
     imgs: [
       '/imgs/Pizza project/1.png',
       '/imgs/Pizza project/2.png',
@@ -28,9 +30,10 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: 'professional-accountant project',
+    name: 'Professional Accountant Project',
     link: 'https://professional-accountant.netlify.app/',
     category: '',
+    details: 'Accounting system with reports, invoices and dashboards',
     imgs: [
       '/imgs/professional accountant/1.png',
       '/imgs/professional accountant/2.png',
