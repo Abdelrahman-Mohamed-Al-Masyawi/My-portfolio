@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { projectsData } from '../context/projectsData';
+import { projectsData } from '../data/projectsData';
 import '../styles/projects.css';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { useAppContext } from '../context/AppContext';
 import { useTranslation } from 'react-i18next';
+import { useScrollTOSection } from '../context/scrollToSectionContext';
 export default function Projects() {
   const [paginationImg, setPaginationImg] = useState({});
-  const { projectRef } = useAppContext();
+  const { projectRef } = useScrollTOSection();
   const { t } = useTranslation('projects');
   function handlePlusPaginationImg(el) {
     const currentImg = paginationImg[el.id] || 0;

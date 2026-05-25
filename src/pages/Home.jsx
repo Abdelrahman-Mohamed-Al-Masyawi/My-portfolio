@@ -1,15 +1,15 @@
 import GroupIcons from '../components/groupIcons';
-import { useAppContext } from '../context/AppContext';
 import '../styles/Home.css';
 import '../styles/responsive/HomeResponsive.css';
 
-import { skillsData } from './../context/skillsData';
+import { skillsData } from '../data/skillsData';
 
-import { coursesData } from './../context/coursesData';
 import { useTranslation } from 'react-i18next';
+import { coursesData } from '../data/coursesData';
+import { useScrollTOSection } from '../context/scrollToSectionContext';
 export default function Home() {
-  const { homeRef } = useAppContext();
-  const {t}=useTranslation()
+  const { homeRef } = useScrollTOSection();
+  const { t } = useTranslation();
   return (
     <div ref={homeRef} className='container-home'>
       {/* //*information */}
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
         {/* //?احصاءات */}
-        <div className='statistics'>
+        <div className='statistics '>
           {/* <div className='container-one-statistic'>
             <p className='number'>5</p>
             <p className='name-statistic'>Experiences</p>

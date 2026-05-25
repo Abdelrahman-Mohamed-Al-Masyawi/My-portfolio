@@ -3,12 +3,12 @@ import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
 import { FaPaperPlane } from 'react-icons/fa';
-import { useAppContext } from '../context/AppContext';
 import { useRef } from 'react';
 import '../styles/contact.css';
+import { useScrollTOSection } from '../context/scrollToSectionContext';
 export default function Contact() {
   // variables
-  const { contactRef } = useAppContext();
+  const { contactRef } = useScrollTOSection();
   const { t } = useTranslation('contact');
 
   // ui

@@ -1,13 +1,20 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaMoon, FaSun } from 'react-icons/fa';
 import { HiLanguage } from 'react-icons/hi2';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { useAppContext } from '../context/AppContext';
+import { useLanguage } from '../context/languageContext';
+import { useScrollTOSection } from '../context/scrollToSectionContext';
+import { useSidebar } from '../context/sideBarContext';
+import { useTheme } from '../context/themeContext';
 import '../styles/Header.css';
 import useResponsive from './../hooks/useResponsive';
 export default function Header() {
   const { isTabletWithPhone } = useResponsive();
-  const { openSidebar, showSidebar, handleScrollTOContact, toggleLanguage } = useAppContext();
+  const { handleScrollTOContact } = useScrollTOSection();
+  const { openSidebar } = useSidebar();
+  const { toggleLanguage } = useLanguage();
+  const { lightMood, handleLightMood } = useTheme();
 
   const { t, i18n } = useTranslation('navbar');
 
@@ -31,16 +38,21 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <header className=''>
       <div className='logo'>
         <img className='img-logo' src='/logo-Abdelrahman1.png' alt='' />
       </div>
       <Navigation />
-      <button onClick={toggleLanguage} className='lang-pill-btn'>
+      <span onClick={handleLightMood} className='container-lightMood'>
+        {lightMood ?
+          <FaMoon className='moon' />
+        : <FaSun className='sun' />}
+      </span>
+      <button onClick={toggleLanguage} className='lang-pill-btn '>
         <HiLanguage className='lang-icon' />
         <span className='lang-text'>{i18n.language === 'en' ? 'AR' : 'EN'}</span>
       </button>
-      <button onClick={() => handleScrollTOContact()} className='btn-hire-me'>
+      <button onClick={() => handleScrollTOContact()} className={`btn-hire-me `}>
         {t('Hire Me')}
       </button>
     </header>
@@ -50,17 +62,15 @@ export default function Header() {
 function Navigation() {
   const [PageActive, setPageActive] = useState('Home');
   const { t } = useTranslation('navbar');
+  const { openSidebar, showSidebar } = useSidebar();
   const {
-    openSidebar,
-    showSidebar,
     handleScrollTOHome,
     handleScrollTOContact,
     handleScrollTOCourses,
     handleScrollTOSkills,
     handleScrollTOAbout,
     handleScrollTOProject,
-  } = useAppContext();
-
+  } = useScrollTOSection();
   function ActivePage(value, fun) {
     setPageActive(value);
     if (fun) {

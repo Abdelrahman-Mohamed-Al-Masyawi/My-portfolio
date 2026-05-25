@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Footer from './components/footer';
 import AppProvider from './context/AppContext';
 import Layout from './layout';
-
+import "./styles/lightMood.css"
 export default function App() {
   // variables
   const { i18n } = useTranslation();

@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useAppContext } from '../context/AppContext';
-import { skillsData } from '../context/skillsData';
+import { skillsData } from '../data/skillsData';
 import '../styles/Skills.css';
+import { useScrollTOSection } from '../context/scrollToSectionContext';
 export default function Skills() {
   // variables
   const [filterSkills, setFilterSkills] = useState('tech');
   const { t } = useTranslation('skills');
-  const { skillsRef } = useAppContext();
+  const { skillsRef } = useScrollTOSection();
 
   const skillsFilter = skillsData.filter((el) => {
     if (filterSkills == 'All') {

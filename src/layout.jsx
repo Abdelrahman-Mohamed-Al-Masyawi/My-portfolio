@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Sidebar from './components/sidebar';
-import { useAppContext } from './context/AppContext';
+import { useSidebar } from './context/sideBarContext';
 import useResponsive from './hooks/useResponsive';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/contact';
@@ -12,16 +12,16 @@ import './styles/Layout.css';
 
 export default function Layout() {
   const { isTabletWithPhone } = useResponsive();
-  const { showSidebar } = useAppContext();
+  const { showSidebar } = useSidebar();
   return (
-    <div className='layout'>
+    <div className='layout '>
       <Header />
       <Home />
-      <AboutMe/>
-      <Skills/>
-      <Projects/>
-      <Courses/>
-      <Contact/>
+      <AboutMe />
+      <Skills />
+      <Projects />
+      <Courses />
+      <Contact />
       {showSidebar && <Sidebar />}
     </div>
   );

@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import { useAppContext } from '../context/AppContext';
 import '../styles/AboutMe.css';
+import { useScrollTOSection } from '../context/scrollToSectionContext';
 
 export default function AboutMe() {
   // variables
-  const { aboutRf } = useAppContext();
+  const { aboutRf } = useScrollTOSection();
   const { t } = useTranslation('about');
 
   // ui

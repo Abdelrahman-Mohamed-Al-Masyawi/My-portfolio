@@ -3,24 +3,24 @@ import { useTranslation } from 'react-i18next';
 import { AiFillHome } from 'react-icons/ai';
 import { FaFolderOpen, FaGraduationCap, FaPhone, FaTimes, FaTools, FaUser } from 'react-icons/fa';
 import { HiLanguage } from 'react-icons/hi2';
-import { useAppContext } from '../context/AppContext';
+import { useLanguage } from '../context/languageContext';
+import { useSidebar } from '../context/sideBarContext';
 import '../styles/sidebar.css';
+
 export default function Sidebar() {
   const [PageActive, setPageActive] = useState('Home');
-  const { closeSidebar, language, toggleLanguage } = useAppContext();
-  
+  const { closeSidebar } = useSidebar();
+  const { language, toggleLanguage } = useLanguage();
+  const { openSidebar, showSidebar } = useSidebar();
 
   const {
-    openSidebar,
-    showSidebar,
     handleScrollTOHome,
-
+    handleScrollTOContact,
     handleScrollTOCourses,
     handleScrollTOSkills,
     handleScrollTOAbout,
     handleScrollTOProject,
-    handleScrollTOContact,
-  } = useAppContext();
+  } = useScrollTOSection();
 
   const actions = {
     ActivePage(value, fn) {

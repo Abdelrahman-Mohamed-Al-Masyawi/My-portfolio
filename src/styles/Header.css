@@ -8,8 +8,8 @@ header {
   opacity: 1;
   padding-right: 80px;
   padding-left: 80px;
-  background-color: rgba(255, 255, 255, 0);
-  background-color: rgba(20, 20, 20);
+  /* background-color: rgba(255, 255, 255, 0); */
+  background-color: #141414;
   position: sticky;
   z-index: 100;
   box-shadow: 0 2px 8px rgb(250, 110, 0, 0.1);
@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-  font-family: "K2D";
+  font-family: 'K2D';
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
@@ -31,7 +31,7 @@ header {
 }
 
 .logo-mobile {
-  font-family: "K2D";
+  font-family: 'K2D';
   font-style: Bold;
   text-align: justify;
 }
@@ -62,7 +62,7 @@ header {
 .pages {
   width: 653px;
   /* width: 40%; */
-  height: 24px;
+  /* height: 24px; */
   opacity: 1;
   display: flex;
   justify-content: space-around;
@@ -70,7 +70,7 @@ header {
 }
 
 .one-page {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 500;
   font-style: Medium;
   font-size: 20px;
@@ -80,7 +80,6 @@ header {
   color: rgba(149, 149, 149, 1);
   padding-top: 10px;
   cursor: pointer;
-  
 }
 .one-page:hover {
   color: #e46400;
@@ -102,7 +101,7 @@ header {
   padding-bottom: 12px;
   padding-left: 40px;
   background: linear-gradient(94.36deg, #fd6f00 3.1%, #e46400 94.54%);
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 700;
   font-style: Bold;
   font-size: 16px;
@@ -115,17 +114,13 @@ header {
   background: #f68127;
 }
 
-
-
-
-
 .lang-pill-btn {
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
-margin-right: 10px;
+  margin-right: 10px;
   padding: 6px 12px;
 
   border-radius: 999px;
@@ -161,6 +156,20 @@ margin-right: 10px;
 .lang-text {
   font-size: 12px;
   letter-spacing: 1px;
+}
+.container-lightMood {
+  margin-top: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.sun {
+  font-size: 22px;
+  color: #fbbf24;
+}
+
+.moon {
+  font-size: 22px;
+  color: #818cf8;
 }
 @media (max-width: 1100px) {
   header {
@@ -216,8 +225,5 @@ margin-right: 10px;
     color: #ffff !important;
     font-size: 10px;
   }
-  
 }
-@media (max-width: 899px) and(max-width: 899px){
-  .pages{}
-}
+

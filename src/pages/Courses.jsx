@@ -1,17 +1,19 @@
 import { useTranslation } from 'react-i18next';
-import { useAppContext } from '../context/AppContext';
-import { coursesData } from '../context/coursesData';
+import { coursesData } from '../data/coursesData';
 import '../styles/courses.css';
+import { useScrollTOSection } from '../context/scrollToSectionContext';
 export default function Courses() {
   const courses = coursesData;
-  const { coursesRef } = useAppContext();
+  const { coursesRef } = useScrollTOSection();
   const { t } = useTranslation('courses');
   return (
     <section ref={coursesRef} className='container-courses'>
       <div className='container-title-page'>
-        <h2 className='title-page-Courses'>{t("Courses")}</h2>
+        <h2 className='title-page-Courses'>{t('Courses')}</h2>
         <p className='details-title-page-courses'>
-          {t("Dedicated to lifelong learning, building innovative solutions, and growing through real-world projects and modern technologies.")}
+          {t(
+            'Dedicated to lifelong learning, building innovative solutions, and growing through real-world projects and modern technologies.',
+          )}
         </p>
       </div>
       <div className='container-courses'>
