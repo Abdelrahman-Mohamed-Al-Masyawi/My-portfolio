@@ -1,11 +1,10 @@
 import emailjs from '@emailjs/browser';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import toast from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
 import { FaPaperPlane } from 'react-icons/fa';
-import { useRef } from 'react';
-import '../styles/contact.css';
 import { useScrollTOSection } from '../context/scrollToSectionContext';
+import '../styles/contact.css';
 export default function Contact() {
   // variables
   const { contactRef } = useScrollTOSection();
@@ -15,10 +14,10 @@ export default function Contact() {
   return (
     <section ref={contactRef} className='container-page-contact'>
       <div className='container-title-page-contact'>
-        <h2 className='title-page-contact'>{t('Contact me')}</h2>
+        <h2 className='title-page-contact dark:text-white-4!'>{t('Contact me')}</h2>
         <div className='containerSections'>
           <div className='container-links-contact widthContainer'>
-            <p className='paragraph-contact '>
+            <p className='paragraph-contact dark:text-black-5 '>
               {t(
                 "Don't hesitate to get in touch - I'd be happy to help you achieve the work you want in the best way possible",
               )}
@@ -110,7 +109,7 @@ function ClientForm() {
         name='name'
         type='text'
         required
-        className='input width-input'
+        className='input dark:bg-black-6 dark:text-white-4 width-input'
         onChange={(e) => setName(e.target.value)}
       />
       <input
@@ -121,8 +120,8 @@ function ClientForm() {
         placeholder={t('email')}
         required
         type='email'
-        name='client_email'
-        className='input width-input'
+        name='client_email '
+        className='input dark:bg-black-6 dark:text-white-4 width-input'
       />
 
       <input
@@ -130,34 +129,34 @@ function ClientForm() {
         value={phone}
         onChange={handlerNumberPhone}
         type='text'
-        className='input width-input'
+        className='input dark:bg-black-6 dark:text-white-4 width-input'
         name='client_phone'
         id=''
       />
       <select
-        name='client_subject'
+        name='client_subject '
         required
         value={subject}
         onChange={(e) => {
           setSubject(e.target.value);
         }}
-        className='input width-input'>
-        <option className='option-contact' value=''>
+        className='input dark:bg-black-6 dark:text-white-4 width-input'>
+        <option className='option-contact dark:bg-black dark:text-white-4' value=''>
           {t('subject')}
         </option>
-        <option className='option-contact' value='work'>
+        <option className='dark:bg-black dark:text-white-4' value='work'>
           {t('work')}
         </option>
-        <option className='option-contact' value='service'>
+        <option className='dark:bg-black dark:text-white-4' value='service'>
           {t('service')}
         </option>
-        <option className='option-contact' value='suggest'>
+        <option className='dark:bg-black dark:text-white-4' value='suggest'>
           {t('suggestion')}
         </option>
-        <option className='option-contact' value='compline'>
+        <option className='dark:bg-black dark:text-white-4' value='compline'>
           {t('complaint')}
         </option>
-        <option className='option-contact' value='another'>
+        <option className='dark:bg-black dark:text-white-4' value='another'>
           {t('another')}
         </option>
       </select>
@@ -171,12 +170,12 @@ function ClientForm() {
         name={t('message')}
         rows={2}
         placeholder={t('details message')}
-        className='input textarea'></textarea>
+        className='input dark:bg-black-6 dark:text-white-4! textarea'></textarea>
       <button
         disabled={loading}
         type='submit'
-        className={` bg-[#fd6f00] rounde-lg m-3 mx-auto flex w-full items-center justify-center px-4 py-2  text-white shadow-lg hover:bg-green-600  ${
-          loading ? 'cursor-not-allowed bg-gray-500' : 'bg-slate-900 hover:bg-slate-700'
+        className={` dark:bg-gold-4 rounde-lg m-3 mx-auto flex w-full items-center justify-center px-4 py-2  dark:text-white shadow-lg dark:hover:bg-green-600  ${
+          loading ? 'cursor-not-allowed dark:bg-gray-500' : 'dark:bg-slate-900 dark:hover:bg-slate-700'
         }`}>
         {loading ? t('Sending...') : t('Send')}
         <FaPaperPlane className='mx-2' />
@@ -189,7 +188,7 @@ function ContactSites({ icon, nameIcon, linkText }) {
   return (
     <div className='containerIconContact'>
       <img className='IconContact' src={icon} alt={nameIcon} />
-      <a target='_blank' rel='noreferrer' className='linkText' href={linkText}>
+      <a target='_blank' rel='noreferrer' className='linkText dark:text-white-4!' href={linkText}>
         {nameIcon}
       </a>
     </div>

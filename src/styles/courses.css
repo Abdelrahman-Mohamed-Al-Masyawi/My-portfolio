@@ -24,7 +24,6 @@
   line-height: 100%;
   letter-spacing: 3%;
   text-align: center;
-  color: rgba(254, 254, 254, 1);
   margin-bottom: 30px;
 }
 
@@ -36,7 +35,6 @@
   line-height: 160%;
   letter-spacing: 3%;
   text-align: justify;
-  color: rgba(112, 112, 112, 1);
   margin-bottom: 30px;
 }
 .container-courses {
@@ -51,32 +49,25 @@
   height: 270px !important;
   border-radius: 24px;
   padding: 34px;
-  background: rgba(255, 255, 255, 0.04) !important;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card:hover {
-  background: rgba(239, 225, 225, 0.2) !important;
-}
+
 
 .header-card{
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.card:hover:hover .details-card {
-  color: white;
-}
+
 
 .icon-card {
   width: 70px;
   height: 70px;
   top: 5.83px;
   left: 5.83px;
-  color: rgba(253, 111, 0, 1);
-  /* color: white; */
 }
 .title-card {
   font-family: "Lato";
@@ -84,7 +75,6 @@
   font-style: Bold;
   font-size: 20px;
   text-align: center;
-  color: rgba(253, 111, 0, 1);
 }
 .details-card {
   font-family: "Lato";
@@ -92,7 +82,6 @@
   font-style: Medium;
   font-size: 20px;
   text-align: center;
-  color: rgba(87, 87, 87, 1);
 }
 
 @media (max-width: 400px) {
@@ -113,7 +102,6 @@
     height: auto;
     border-radius: 24px;
     padding: 34px;
-    background: rgba(255, 255, 255, 0.04) !important;
   }
   .title-card {
     font-family: "Lato";
@@ -121,7 +109,6 @@
     font-style: Bold;
     font-size: 20px;
     text-align: center;
-    color: rgba(253, 111, 0, 1);
   }
   .title-page-Courses{
     font-size: 24px;
@@ -159,7 +146,6 @@
     width: 350px !important;
     border-radius: 24px;
     padding: 34px;
-    background: rgba(255, 255, 255, 0.04) !important;
   }
 }
 @media (min-width: 651px) and (max-width: 700px) {
@@ -167,7 +153,6 @@
     width: clamp(300px, 45%, 350px) !important;
     border-radius: 24px;
     padding: 34px;
-    background: rgba(255, 255, 255, 0.04) !important;
     -webkit-border-radius: 24px;
     -moz-border-radius: 24px;
     -ms-border-radius: 24px;
@@ -200,7 +185,6 @@
   
     border-radius: 24px;
     padding: 34px;
-    background: rgba(255, 255, 255, 0.04) !important;
   }
   .details-title-page-courses {
     padding-left: 20px;
@@ -221,7 +205,6 @@
   
     border-radius: 24px;
     padding: 34px;
-    background: rgba(255, 255, 255, 0.04) !important;
   }
   .details-title-page-courses {
     padding-left: 70px;

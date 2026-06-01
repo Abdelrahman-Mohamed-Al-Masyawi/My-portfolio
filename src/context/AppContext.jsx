@@ -5,6 +5,7 @@ import SidebarProvider from './sideBarContext';
 import ThemeProvider from './themeContext';
 
 export default function AppProvider({ children }) {
+  
   return (
     <>
       <ThemeProvider>

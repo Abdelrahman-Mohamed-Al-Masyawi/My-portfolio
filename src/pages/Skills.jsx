@@ -37,7 +37,7 @@ export default function Skills() {
   // ui
   return (
     <section ref={skillsRef} className='container-page-skills'>
-      <h2 className='title-page-skills'>{t('My Skills')}</h2>
+      <h2 className='title-page-skills dark:text-white-4!'>{t('My Skills')}</h2>
       <div className='container-btns-filter-skills'>
         <button style={BackgroundBtn('All')} onClick={() => handleFilter('All')} className='btn-filter-skills'>
           {t('All')}
@@ -55,11 +55,11 @@ export default function Skills() {
       <div className='container-card-Skills'>
         {skillsFilter?.map((skill) => {
           return (
-            <div key={skill.id} className='card-Skills'>
+            <div key={skill.id} className='card-Skills bg-[#E5E7EB]! dark:bg-black-6 dark:hover:bg-black-7'>
               <span className='circle-icons-skills'>
                 <img src={skill.icon} alt={skill.name} className='icon-skills' />
               </span>
-              <span className='name-skills'>{t(skill.name)}</span>
+              <span className='name-skills dark:text-white '>{t(skill.name)}</span>
             </div>
           );
         })}

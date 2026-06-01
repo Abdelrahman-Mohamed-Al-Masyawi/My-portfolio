@@ -10,16 +10,24 @@ export default function GroupIcons() {
   };
   return (
     <div className='container-contacts-icon'>
-      <a title='966580370681' href={links.Whatsapp} target='_blank' className='rounded-icons-container'>
+      <a
+        title='966580370681'
+        href={links.Whatsapp}
+        target='_blank'
+        className='rounded-icons-container bg-black-6 hover:bg-gold-3'>
         <FaWhatsapp color='#bababa' className='contacts-icon' />
       </a>
-      <a href={links.Linkedin} target='_blank' className='rounded-icons-container'>
+      <a href={links.Linkedin} target='_blank' className='rounded-icons-container bg-black-6 hover:bg-gold-3'>
         <FaLinkedin color='#bababa' className='contacts-icon' />
       </a>
-      <a href={links.Phon} title='966580370681' target='_blank' className='rounded-icons-container'>
+      <a
+        href={links.Phon}
+        title='966580370681'
+        target='_blank'
+        className='rounded-icons-container bg-black-6 hover:bg-gold-3'>
         <FaPhone color='#bababa' className='contacts-icon' />
       </a>
-      <a href={links.Github} target='_blank' className='rounded-icons-container'>
+      <a href={links.Github} target='_blank' className='rounded-icons-container bg-black-6 hover:bg-gold-3'>
         <FaGithub color='#bababa' className='contacts-icon' />
       </a>
 

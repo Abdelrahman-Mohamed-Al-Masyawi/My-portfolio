@@ -1,7 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-gold-1: #fa6e00;
+  --color-gold-2: #e46400;
+  --color-gold-3: #f68127;
+  --color-gold-4: #fd6f00;
+  --color-gold-5: #ff7a1a;
+  --color-black-0: #121212;
+  --color-black-1: #000000;
+  --color-black-2: #ffffff26;
+  --color-black-3: #141414;
+  --color-black-4: #707070;
+  --color-black-5: #959595;
+  --color-black-6: #ffffff0a;
+  --color-black-7: #efe1e133;
+  --color-black-8: #1a1a1a;
+  --color-white-1: #ffffff;
+  --color-white-2: #f5f5f7;
+  --color-white-3: #dfdfdf;
+  --color-white-4: #fefefe;
+  --color-sun: #fbbf24;
+  --color-moon: #818cf8;
+}
 * {
   padding: 0;
   margin: 0;

@@ -8,8 +8,6 @@ header {
   opacity: 1;
   padding-right: 80px;
   padding-left: 80px;
-  /* background-color: rgba(255, 255, 255, 0); */
-  background-color: #141414;
   position: sticky;
   z-index: 100;
   box-shadow: 0 2px 8px rgb(250, 110, 0, 0.1);
@@ -50,10 +48,7 @@ header {
   align-items: baseline;
 }
 .nameAndJopInMobile {
-  color: #ffff !important;
   font-size: 12px;
-  /* position: relative; */
-  /* z-index: 10000000; */
 }
 
 .img-logo {
@@ -61,12 +56,11 @@ header {
 }
 .pages {
   width: 653px;
-  /* width: 40%; */
-  /* height: 24px; */
   opacity: 1;
   display: flex;
   justify-content: space-around;
   width: 70%;
+  padding-top: 10px;
 }
 
 .one-page {
@@ -77,13 +71,10 @@ header {
   line-height: 100%;
   letter-spacing: 3%;
   text-align: justify;
-  color: rgba(149, 149, 149, 1);
   padding-top: 10px;
   cursor: pointer;
 }
 .one-page:hover {
-  color: #e46400;
-  /* background: rgba(255, 106, 0, 0.08); */
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -108,7 +99,7 @@ header {
   line-height: 100%;
   letter-spacing: 3%;
   text-align: justify;
-  color: rgba(255, 255, 255, 1);
+ 
 }
 .btn-hire-me:hover {
   background: #f68127;
@@ -125,12 +116,10 @@ header {
 
   border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  color: white;
 
   cursor: pointer;
 
@@ -142,8 +131,7 @@ header {
 
 /* hover */
 .lang-pill-btn:hover {
-  background: white;
-  color: black;
+
   transform: scale(1.05);
 }
 
@@ -157,19 +145,18 @@ header {
   font-size: 12px;
   letter-spacing: 1px;
 }
-.container-lightMood {
+
+.container-lightMood-nav {
   margin-top: 15px;
   margin-right: 20px;
   cursor: pointer;
 }
 .sun {
   font-size: 22px;
-  color: #fbbf24;
 }
 
 .moon {
   font-size: 22px;
-  color: #818cf8;
 }
 @media (max-width: 1100px) {
   header {
@@ -200,9 +187,7 @@ header {
     font-size: 17px;
   }
 
-  .btn-hire-me:hover {
-    background: #f68127;
-  }
+ 
 }
 
 @media (max-width: 899px) {
@@ -222,8 +207,13 @@ header {
     height: 30px;
   }
   .nameAndJopInMobile {
-    color: #ffff !important;
     font-size: 10px;
   }
 }
 
+
+.iconMenu {
+ 
+  font-size: 30px;
+  cursor: pointer;
+}

@@ -4,17 +4,15 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background: rgba(255, 255, 255, 0.04);
   padding: 20px;
-   box-shadow: 0 -4px 15px rgb(250, 110, 0, 0.1);
-
+  box-shadow: 0 -4px 15px rgb(250, 110, 0, 0.1);
 }
-.container-logo{
+.container-logo {
   display: flex;
   gap: 22px;
 }
 .logo-footer {
-  font-family: "K2D";
+  font-family: 'K2D';
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
@@ -27,18 +25,17 @@
   border-top: 1px solid #fff;
   margin-top: 20px;
   padding-top: 20px;
-  color: rgba(149, 149, 149, 1);
   font-size: 25px;
   direction: ltr;
 }
 
 @media (max-width: 500px) {
   .logo-footer {
-  font-size: 20px;
-}
+    font-size: 20px;
+  }
   .copyright {
     margin-top: 10px;
-  padding-top: 10px;
+    padding-top: 10px;
     font-size: 15px;
   }
 }

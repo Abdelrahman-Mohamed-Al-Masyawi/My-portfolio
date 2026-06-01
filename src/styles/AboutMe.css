@@ -9,7 +9,6 @@
   font-style: Bold;
   font-size: 40px;
   margin-bottom: 30px;
-  color: rgba(254, 254, 254, 1);
 }
 
 .content-page-aboutMe {
@@ -20,7 +19,6 @@
   line-height: 190%;
   letter-spacing: 0%;
   text-align: justify;
-  color: rgba(149, 149, 149, 1);
 }
 
 @media (max-width: 400px) {

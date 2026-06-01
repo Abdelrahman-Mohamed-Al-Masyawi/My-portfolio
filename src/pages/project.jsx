@@ -35,21 +35,12 @@ export default function Projects() {
   }
   return (
     <section ref={projectRef} className='container-page-projects'>
-      <h2 className='title-page-projects'>{t('Projects')}</h2>
-      {/**
-      <div className='container-btns-filter-projects'>
-        <button className='btn-filter-skills'>All</button>
-        <button className='btn-filter-skills'>css</button>
-        <button className='btn-filter-skills'>js</button>
-        <button className='btn-filter-skills'>React</button>
-        <button className='btn-filter-skills'>supabase</button>
-        <button className='btn-filter-skills'>node</button>
-      </div>
-      */}
+      <h2 className='title-page-projects dark:text-white-4!'>{t('Projects')}</h2>
+    
       <div className='container-card-projects'>
         {projectsData.map((el) => {
           return (
-            <div key={el.id} className='card-projects'>
+            <div key={el.id} className='card-projects bg-[#E5E7EB]!  dark:bg-black-6! '>
               <Swiper
                 modules={[Navigation, Pagination]}
                 navigation={true}
@@ -57,7 +48,9 @@ export default function Projects() {
                 spaceBetween={20}
                 slidesPerView={1}>
                 {el.imgs.map((img, index) => (
-                  <SwiperSlide className='relative w-full h-[250px] overflow-hidden rounded-xl bg-gray-800' key={index}>
+                  <SwiperSlide
+                    className='relative w-full h-[250px] overflow-hidden rounded-xl dark:bg-gray-800!'
+                    key={index}>
                     <img className='w-full h-full object-cover' src={img} alt={el.name} />
                   </SwiperSlide>
                 ))}
@@ -65,14 +58,12 @@ export default function Projects() {
 
               <div className='container-details-card-projects'>
                 <div className='container-titles'>
-                  <span className='project-name'>{t(el.name)}</span>
-                  <a href={el.link} className='link-project'>
+                  <span className='project-name dark:text-white!'>{t(el.name)}</span>
+                  <a href={el.link} className=' dark:text-gold-4!'>
                     {t('visit project')}
                   </a>
                 </div>
-                <div className='details'>
-                  {t(el.details)}
-                </div>
+                <div className='details dark:text-black-5!'>{t(el.details)}</div>
               </div>
             </div>
           );
