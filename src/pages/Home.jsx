@@ -1,15 +1,20 @@
 import GroupIcons from '../components/groupIcons';
 import '../styles/Home.css';
 import '../styles/responsive/HomeResponsive.css';
-
+import imgDark from '/imgs/mylogo1.png';
+import imgLight from '/imgs/logo2.png';
 import { skillsData } from '../data/skillsData';
 
 import { useTranslation } from 'react-i18next';
 import { coursesData } from '../data/coursesData';
+import { useTheme } from '../context/themeContext';
+
 import { useScrollTOSection } from '../context/scrollToSectionContext';
 export default function Home() {
   const { homeRef } = useScrollTOSection();
   const { t } = useTranslation();
+  const { darkMode } = useTheme();
+  const srcImg=darkMode?imgDark:imgLight
   return (
     <div ref={homeRef} className='container-home'>
       {/* //*information */}
@@ -54,7 +59,7 @@ export default function Home() {
       {/* //* my img */}
       <div className='container-myImg'>
         <div className='circle'>
-          <img src='/imgs/mylogo1.png' alt='my-img' />
+          <img src={srcImg} alt='my-img' />
         </div>
       </div>
     </div>

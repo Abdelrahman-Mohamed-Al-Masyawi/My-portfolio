@@ -7,7 +7,7 @@ export default function Footer() {
   const { t } = useTranslation('footer');
  
   return (
-    <section className='container-footer bg-[#E5E7EB]! dark:bg-[#262525]! '>
+    <section className='container-footer bg-[#1F2937]! text-white! dark:bg-[#262525]! '>
       <div className='container-logo'>
         <img className='img-logo' src='/logo-Abdelrahman1.png' alt='' />
         <h2 className='logo-footer'>{t('Abdelrahman Mohamed')}</h2>

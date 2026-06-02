@@ -188,7 +188,7 @@ function ContactSites({ icon, nameIcon, linkText }) {
   return (
     <div className='containerIconContact'>
       <img className='IconContact' src={icon} alt={nameIcon} />
-      <a target='_blank' rel='noreferrer' className='linkText text-[#f97316]! dark:text-white-4!' href={linkText}>
+      <a target='_blank' rel='noreferrer' className='linkText text-[#1F2937]! dark:text-white-4!' href={linkText}>
         {nameIcon}
       </a>
     </div>
