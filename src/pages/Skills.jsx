@@ -27,6 +27,7 @@ export default function Skills() {
         {
           background: '#ffffff',
           color: '#000000',
+          border:"1px solid black"
         }
       : {
           background: ' linear-gradient(94.36deg, #fd6f00 3.1%, #e46400 94.54%)',
@@ -37,7 +38,7 @@ export default function Skills() {
   // ui
   return (
     <section ref={skillsRef} className='container-page-skills'>
-      <h2 className='title-page-skills dark:text-white-4!'>{t('My Skills')}</h2>
+      <h2 className='title-page-skills text-[#1f2937]! dark:text-white-4!'>{t('My Skills')}</h2>
       <div className='container-btns-filter-skills'>
         <button style={BackgroundBtn('All')} onClick={() => handleFilter('All')} className='btn-filter-skills'>
           {t('All')}
@@ -55,11 +56,11 @@ export default function Skills() {
       <div className='container-card-Skills'>
         {skillsFilter?.map((skill) => {
           return (
-            <div key={skill.id} className='card-Skills bg-[#E5E7EB]! dark:bg-black-6 dark:hover:bg-black-7'>
+            <div key={skill.id} className='card-Skills bg-[#E5E7EB]! dark:bg-black-6! dark:hover:bg-black-7!'>
               <span className='circle-icons-skills'>
                 <img src={skill.icon} alt={skill.name} className='icon-skills' />
               </span>
-              <span className='name-skills dark:text-white '>{t(skill.name)}</span>
+              <span className='name-skills text-[#1F2937]! dark:text-white! '>{t(skill.name)}</span>
             </div>
           );
         })}

@@ -14,10 +14,10 @@ export default function Contact() {
   return (
     <section ref={contactRef} className='container-page-contact'>
       <div className='container-title-page-contact'>
-        <h2 className='title-page-contact dark:text-white-4!'>{t('Contact me')}</h2>
+        <h2 className='title-page-contact text-[#1f2937]! dark:text-white-4!'>{t('Contact me')}</h2>
         <div className='containerSections'>
           <div className='container-links-contact widthContainer'>
-            <p className='paragraph-contact dark:text-black-5 '>
+            <p className='paragraph-contact text-[#1f2937]! dark:text-black-5! '>
               {t(
                 "Don't hesitate to get in touch - I'd be happy to help you achieve the work you want in the best way possible",
               )}
@@ -188,7 +188,7 @@ function ContactSites({ icon, nameIcon, linkText }) {
   return (
     <div className='containerIconContact'>
       <img className='IconContact' src={icon} alt={nameIcon} />
-      <a target='_blank' rel='noreferrer' className='linkText dark:text-white-4!' href={linkText}>
+      <a target='_blank' rel='noreferrer' className='linkText text-[#f97316]! dark:text-white-4!' href={linkText}>
         {nameIcon}
       </a>
     </div>

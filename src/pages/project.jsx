@@ -35,8 +35,8 @@ export default function Projects() {
   }
   return (
     <section ref={projectRef} className='container-page-projects'>
-      <h2 className='title-page-projects dark:text-white-4!'>{t('Projects')}</h2>
-    
+      <h2 className='title-page-projects text-[#1f2937]! dark:text-white-4!'>{t('Projects')}</h2>
+
       <div className='container-card-projects'>
         {projectsData.map((el) => {
           return (

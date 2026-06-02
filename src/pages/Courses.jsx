@@ -9,7 +9,7 @@ export default function Courses() {
   return (
     <section ref={coursesRef} className='container-courses'>
       <div className='container-title-page'>
-        <h2 className='title-page-Courses dark:text-white-4!'>{t('Courses')}</h2>
+        <h2 className='title-page-Courses text-[#1f2937]! dark:text-white-4!'>{t('Courses')}</h2>
         <p className='details-title-page-courses dark:text-black-5'>
           {t(
             'Dedicated to lifelong learning, building innovative solutions, and growing through real-world projects and modern technologies.',
@@ -19,7 +19,7 @@ export default function Courses() {
       <div className='container-courses'>
         {courses?.map((cours) => {
           return (
-            <div key={cours.id} className='card bg-[#E5E7EB]! dark:bg-black-6! dark:hover:bg-black-7'>
+            <div key={cours.id} className='card bg-[#E5E7EB]! dark:bg-black-6! dark:hover:bg-black-7!'>
               <div className='header-card'>
                 <span className='icon-card'>{cours.icon}</span>
                 <h3 className='title-card dark:text-gold-1!'>{t(cours.title)}</h3>

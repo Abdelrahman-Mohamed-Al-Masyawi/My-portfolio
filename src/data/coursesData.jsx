@@ -18,7 +18,7 @@ export const coursesData = [
     title: 'English (A1-A2)',
     details: 'Basic communication skills for daily conversations',
     year: '2022',
-    icon: <FaLanguage style={styleIcon} />,
+    icon: <img src='/svg/icon-english.png' style={styleIcon} />,
     academy: 'Develop Yourself Academy',
   },
   {
@@ -26,7 +26,7 @@ export const coursesData = [
     title: 'Financial Accounting',
     details: 'Journal entries, Excel bookkeeping, ledger and financial statements',
     year: '2024',
-    icon: <img src="/svg/calculator-svgrepo-com (1).svg" style={styleIcon} />,
+    icon: <img src='/svg/calculator-svgrepo-com (1).svg' style={styleIcon} />,
     academy: 'Self Learning',
   },
   {
@@ -34,7 +34,7 @@ export const coursesData = [
     title: 'React Development',
     details: 'Modern web apps using components, hooks, routing and state management',
     year: '2025',
-    icon: <img src="/svg/react-svgrepo-com.svg" style={styleIcon} />,
+    icon: <img src='/svg/react-svgrepo-com.svg' style={styleIcon} />,
     academy: 'Jonas Schmedtmann',
   },
   {
