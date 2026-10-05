@@ -45,7 +45,7 @@ export default function Sidebar() {
   const { t, i18n } = useTranslation('sidebar');
   const { toggleDarkMood, lightMood } = useTheme();
   return (
-    <aside className='aside bg-white! dark:bg-black-8! dark:text-white'>
+    <aside className={`${i18n.language == 'en' ? 'aside' : 'aside-ar'} bg-white! dark:bg-black-8! dark:text-white`}>
       <div className='container-name-sidebar'>
         <img src='/imgs/mylogo1.png' alt='' className='myImg' />
         <span>{t('Abdelrahman')} </span>
@@ -114,8 +114,8 @@ function LanguageWithDarMode() {
       <span className='line dark:bg-[#f5deb3]'></span>
       <button
         onClick={toggleLanguage}
-        className='container-lang dark:text-white dark:bg-[#14171c] dark:hover:bg-[#2b3138]'>
-        <HiLanguage className='lang-sidebar dark:text-white' />
+        className={`container-lang dark:text-white dark:bg-[#14171c] dark:hover:bg-[#2b3138] ${darkMode ? 'border-white border' : ' border-black border'}`}>
+        <HiLanguage className={`lang-sidebar dark:text-white `} />
         <span>{i18n.language === 'en' ? 'عربي' : 'English'}</span>
       </button>
     </div>

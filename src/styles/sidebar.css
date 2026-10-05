@@ -21,6 +21,24 @@
   padding: 10px 7px;
   text-align: center;
 }
+.aside-ar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.8s linear;
+  -webkit-transition: all 0.8s linear;
+  -moz-transition: all 0.8s linear;
+  -ms-transition: all 0.8s linear;
+  -o-transition: all 0.8s linear;
+  padding: 10px 7px;
+  text-align: center;
+}
+
 .container-name-sidebar {
   display: flex;
   width: 100%;
@@ -135,7 +153,6 @@
   display: flex;
   gap: 4px;
   padding: 3px 4px;
-  border: 1px solid white;
   width: 50%;
   padding: 5px;
   height: auto;
@@ -152,6 +169,7 @@
   -o-border-radius: 15px;
   cursor: pointer;
 }
+
 .container-lang:hover {
   transition: background 0.2s linear;
   -webkit-transition: background 0.2s linear;

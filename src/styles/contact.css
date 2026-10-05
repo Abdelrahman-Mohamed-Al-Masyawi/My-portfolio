@@ -78,7 +78,11 @@
   width: 49%;
 }
 
-
+@media (min-width:300px) and (max-width:550px){
+  .linkText{
+    font-size: 16px;
+  }
+}
 @media (max-width: 550px){
   .width-input {
   width: 100%;
@@ -99,7 +103,7 @@
   }
 
   .linkText{
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .form-contact {
@@ -111,7 +115,7 @@
 
 @media (max-width: 550px){
  .linkText{
-    font-size: 8px;
+    font-size: 16px;
   } 
 }
 @media (min-width: 700px) and (max-width: 1100px) {
@@ -122,7 +126,7 @@
 font-size: 18px;
   }
   .linkText{
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 

@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaPhone, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import '../styles/Home.css';
 export default function GroupIcons() {
   const links = {
@@ -7,6 +7,7 @@ export default function GroupIcons() {
       'https://www.linkedin.com/in/abdelrahman-mohammed-6736a7283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B0UWv8TueQZao1VQFWIrhuQ%3D%3D',
     Phon: 'tel:+966580370681',
     Github: 'https://github.com/Abdelrahman-Mohamed-Al-Masyawi',
+    youtube: 'https://youtube.com/@abdelrahman_al-masyawi?si=kbawekus-ovwg-Tb',
   };
   return (
     <div className='container-contacts-icon'>
@@ -25,10 +26,13 @@ export default function GroupIcons() {
         title='966580370681'
         target='_blank'
         className='rounded-icons-container bg-black-6 hover:bg-gold-3'>
-        <FaPhone color='#bababa' className='contacts-icon' />
+        <FaPhone  color='#bababa' className='contacts-icon' />
       </a>
       <a href={links.Github} target='_blank' className='rounded-icons-container bg-black-6 hover:bg-gold-3'>
         <FaGithub color='#bababa' className='contacts-icon' />
+      </a>
+      <a href={links.youtube} target='_blank' className='rounded-icons-container bg-black-6 hover:bg-gold-3'>
+        <FaYoutube  color='#bababa' className='contacts-icon' />
       </a>
 
       {/* <FaEmail className='contacts-icon' /> */}
