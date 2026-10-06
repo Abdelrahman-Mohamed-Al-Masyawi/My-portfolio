@@ -23,9 +23,9 @@ export default function Header() {
       <header className='bg-white! dark:bg-black-3!'>
         <div className=' logo-mobile '>
           <img className='img-logo' src='/logo-Abdelrahman1.png' alt='' />
-          <div className='my-name-and-jop-inMobile'>
-            <div className='nameAndJopInMobile  dark:text-white'>{t('Abdelrahman Mohamed')}</div>
-            <div className='nameAndJopInMobile dark:text-white'>{t('Front-end developer')}</div>
+          <div className='my-name-and-jop-inMobile text-gold-1 dark:text-white'>
+            <div className='nameAndJopInMobile  '>{t('Abdelrahman Mohamed')}</div>
+            <div className='nameAndJopInMobile '>{t('Front-end developer')}</div>
           </div>
         </div>
         <RxHamburgerMenu className='iconMenu dark:text-gold-3' onClick={openSidebar} />

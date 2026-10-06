@@ -45,7 +45,20 @@ export default function Sidebar() {
   const { t, i18n } = useTranslation('sidebar');
   const { toggleDarkMood, lightMood } = useTheme();
   return (
-    <aside className={`${i18n.language == 'en' ? 'aside' : 'aside-ar'} bg-white! dark:bg-black-8! dark:text-white`}>
+    <aside
+      className={`
+    ${i18n.language === 'en' ? 'aside' : 'aside-ar'}
+    bg-white! dark:bg-black-8! dark:text-white
+    transform
+    transition-transform
+    duration-500
+    ease-in-out
+    ${
+      showSidebar ? 'translate-x-0'
+      : i18n.language === 'en' ? 'translate-x-full'
+      : '-translate-x-full'
+    }
+  `}>
       <div className='container-name-sidebar'>
         <img src='/imgs/mylogo1.png' alt='' className='myImg' />
         <span>{t('Abdelrahman')} </span>

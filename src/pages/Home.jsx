@@ -14,6 +14,7 @@ export default function Home() {
   const { homeRef } = useScrollTOSection();
   const { t } = useTranslation();
   const { darkMode } = useTheme();
+  const { handleScrollTOContact } = useScrollTOSection();
   const srcImg=darkMode?imgDark:imgLight
   return (
     <div ref={homeRef} className='container-home'>
@@ -32,7 +33,9 @@ export default function Home() {
             <GroupIcons />
           </div>
           <div className='container-btns'>
-            <button className='btn-HireMe-home text-white-1! dark:text-white! dark:hover:bg-gold-3!'>
+            <button
+              onClick={handleScrollTOContact}
+              className='btn-HireMe-home text-white-1! dark:text-white! dark:hover:bg-gold-3!'>
               {t('Hire Me')}
             </button>
             <button className='btn-cv bg-[#E5E7EB]! dark:bg-transparent! border border-[#F97316]! dark:border-white!  text-[#1f2937]! dark:text-white! dark:hover:text-black! dark:hover:bg-white! '>
